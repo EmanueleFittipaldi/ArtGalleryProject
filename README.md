@@ -21,6 +21,6 @@ Funzionalità previste: ci sono due figure quella dell’aministratore e quella 
 4. Requirements Analysis Document: 13 Novembre.
 5. System Design Document: 27 novembre.
 6. Specifica delle interfacce dei moduli del sottosistema da implementare: 18 Dicembre.
-7. casi di test: 18 Dicembre.
+7. casi di test: 18 Dicembre
 
 
