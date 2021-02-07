@@ -1,0 +1,943 @@
+{
+  "id": "34eb12cd-0573-4bbf-96bc-fdf84330e870",
+  "version": "2.0",
+  "name": "Acquisto",
+  "url": "http://localhost:8080/ArtGalleryIS_war_exploded/",
+  "tests": [{
+    "id": "e972fbe2-0495-4298-bdc5-be4de7a20a5d",
+    "name": "TC_ACQ1",
+    "commands": [{
+      "id": "801cd160-0e0c-4029-b671-2c7c20f9b6e7",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/ArtGalleryIS_war_exploded/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3782b655-444d-4dc1-aaf2-a7acaa3efefd",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1051x815",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "781ebc7b-7bfa-40f4-a61d-e4853968b60e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.item:nth-child(1) .sub",
+      "targets": [
+        ["css=.item:nth-child(1) .sub", "css:finder"],
+        ["xpath=//input[@value='Vedi Quadro']", "xpath:attributes"],
+        ["xpath=//div[@id='masonry']/div/form/input", "xpath:idRelative"],
+        ["xpath=//div/div/form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e8b15cbc-fd67-4d95-8911-35ccc4b4a23e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.acquista",
+      "targets": [
+        ["css=.acquista", "css:finder"],
+        ["xpath=//input[@value='Aggiungi al carrello']", "xpath:attributes"],
+        ["xpath=//div[2]/form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2fb64115-8728-4cd0-8a3f-4a062a6c42bb",
+      "comment": "",
+      "command": "click",
+      "target": "css=form:nth-child(6) > button",
+      "targets": [
+        ["css=form:nth-child(6) > button", "css:finder"],
+        ["xpath=//div[@id='navbar']/form[4]/button", "xpath:idRelative"],
+        ["xpath=//form[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "92c0e3e6-43a8-4ef7-b4c5-718484391c63",
+      "comment": "",
+      "command": "click",
+      "target": "id=checkoutButton",
+      "targets": [
+        ["id=checkoutButton", "id"],
+        ["name=checkout", "name"],
+        ["css=#checkoutButton", "css:finder"],
+        ["xpath=//input[@id='checkoutButton']", "xpath:attributes"],
+        ["xpath=//div[@id='cartItems']/form/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dc7a734e-6026-4db2-80cd-aea1e3abbab3",
+      "comment": "Utente non loggato tenta acquisto",
+      "command": "assertText",
+      "target": "css=h2",
+      "targets": [
+        ["css=h2", "css:finder"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Registration')]", "xpath:innerText"]
+      ],
+      "value": "Registration"
+    }]
+  }, {
+    "id": "4f27e1ad-8169-4b6b-b912-fdb398443470",
+    "name": "TC_ACQ2",
+    "commands": [{
+      "id": "af14a620-61ee-4b81-863b-ed6fd2bde71f",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/ArtGalleryIS_war_exploded/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "871358d5-219b-4b4a-b9d7-1dbb46e47055",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1051x815",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0d5681f6-d399-4810-9d0f-2e4f9e92b289",
+      "comment": "",
+      "command": "click",
+      "target": "css=form:nth-child(6) > button",
+      "targets": [
+        ["css=form:nth-child(6) > button", "css:finder"],
+        ["xpath=//div[@id='navbar']/form[4]/button", "xpath:idRelative"],
+        ["xpath=//form[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "de04109e-c143-471d-9f25-9d84056a4c11",
+      "comment": "",
+      "command": "click",
+      "target": "id=checkoutButton",
+      "targets": [
+        ["id=checkoutButton", "id"],
+        ["name=checkout", "name"],
+        ["css=#checkoutButton", "css:finder"],
+        ["xpath=//input[@id='checkoutButton']", "xpath:attributes"],
+        ["xpath=//div[@id='cartItems']/form/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bd5b719a-ee0d-496e-b525-f4f6d0847324",
+      "comment": "Utente non loggato fa checkout senza quadri",
+      "command": "assertElementPresent",
+      "target": "id=Genere",
+      "targets": [
+        ["id=Genere", "id"],
+        ["name=Genere", "name"],
+        ["css=#Genere", "css:finder"],
+        ["xpath=//select[@id='Genere']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar']/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "f3051cf4-58a7-4d09-a2dd-6bb4fcc97a20",
+    "name": "TC_ACQ3",
+    "commands": [{
+      "id": "f37ffa9a-77f5-4424-8981-624766052b5b",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/ArtGalleryIS_war_exploded/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "80e1af01-fe08-4a6d-baa6-83e5a4b8569d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1051x815",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "82a17938-7a05-4148-bb52-787f9bad3122",
+      "comment": "",
+      "command": "click",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "84aea58c-0fec-4303-aa5b-7ca26ce61fbb",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "usr2"
+    }, {
+      "id": "3445db33-64cf-4158-80ca-745d5c2074df",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "usr2"
+    }, {
+      "id": "c53da52c-6799-4b9e-a1e0-ceba56b2bbea",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "3bacf544-c40d-4191-9696-8c061d8d2fae",
+      "comment": "",
+      "command": "click",
+      "target": "css=form:nth-child(7) > button",
+      "targets": [
+        ["css=form:nth-child(7) > button", "css:finder"],
+        ["xpath=//div[@id='navbar']/form[5]/button", "xpath:idRelative"],
+        ["xpath=//form[5]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "61c05dc2-64b5-4ae3-bdef-37d6638d5b61",
+      "comment": "",
+      "command": "click",
+      "target": "id=checkoutButton",
+      "targets": [
+        ["id=checkoutButton", "id"],
+        ["name=checkout", "name"],
+        ["css=#checkoutButton", "css:finder"],
+        ["xpath=//input[@id='checkoutButton']", "xpath:attributes"],
+        ["xpath=//div[@id='cartItems']/form/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "22926c78-e84a-447d-b85e-18dec826e877",
+      "comment": "Utente loggato fa checkout senza quadri",
+      "command": "assertElementPresent",
+      "target": "id=Genere",
+      "targets": [
+        ["id=Genere", "id"],
+        ["name=Genere", "name"],
+        ["css=#Genere", "css:finder"],
+        ["xpath=//select[@id='Genere']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar']/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "85363582-89c2-4d58-9812-c747ea5ef0e5",
+    "name": "TC_ACQ4",
+    "commands": [{
+      "id": "9be67201-7078-480f-9a58-202be8a4f1be",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/ArtGalleryIS_war_exploded/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dc8286cf-4bba-4635-8df4-71ef4ad69bc4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1051x815",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4c5272ee-8488-4894-a3ca-754c5d8ea3ad",
+      "comment": "",
+      "command": "click",
+      "target": "css=.item:nth-child(1) .sub",
+      "targets": [
+        ["css=.item:nth-child(1) .sub", "css:finder"],
+        ["xpath=//input[@value='Vedi Quadro']", "xpath:attributes"],
+        ["xpath=//div[@id='masonry']/div/form/input", "xpath:idRelative"],
+        ["xpath=//div/div/form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "efce456f-a169-4b6d-961e-540144b79ac6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.acquista",
+      "targets": [
+        ["css=.acquista", "css:finder"],
+        ["xpath=//input[@value='Aggiungi al carrello']", "xpath:attributes"],
+        ["xpath=//div[2]/form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aa40d179-c99b-40e4-8f80-6d91226d282c",
+      "comment": "",
+      "command": "click",
+      "target": "css=form:nth-child(6) > button",
+      "targets": [
+        ["css=form:nth-child(6) > button", "css:finder"],
+        ["xpath=//div[@id='navbar']/form[4]/button", "xpath:idRelative"],
+        ["xpath=//form[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "985e3f82-4655-42af-b42a-1a642a18311c",
+      "comment": "",
+      "command": "click",
+      "target": "id=checkoutButton",
+      "targets": [
+        ["id=checkoutButton", "id"],
+        ["name=checkout", "name"],
+        ["css=#checkoutButton", "css:finder"],
+        ["xpath=//input[@id='checkoutButton']", "xpath:attributes"],
+        ["xpath=//div[@id='cartItems']/form/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b3154a38-a9a0-4786-b4f2-54b4a382f63f",
+      "comment": "",
+      "command": "click",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "250a6264-a3df-4513-b742-12ff187a5c23",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "usr2"
+    }, {
+      "id": "f601e2ae-6abf-4361-b6fb-84deaa786aab",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "usr2"
+    }, {
+      "id": "c3623d72-4603-4b25-b65a-9b90c76b9eb9",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "2180e220-a5fc-47b3-97d2-d20dfe49b87f",
+      "comment": "",
+      "command": "click",
+      "target": "css=form:nth-child(7) > button",
+      "targets": [
+        ["css=form:nth-child(7) > button", "css:finder"],
+        ["xpath=//div[@id='navbar']/form[5]/button", "xpath:idRelative"],
+        ["xpath=//form[5]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "018f1099-5358-4e99-86c2-a5b5ffe5f105",
+      "comment": "",
+      "command": "click",
+      "target": "id=checkoutButton",
+      "targets": [
+        ["id=checkoutButton", "id"],
+        ["name=checkout", "name"],
+        ["css=#checkoutButton", "css:finder"],
+        ["xpath=//input[@id='checkoutButton']", "xpath:attributes"],
+        ["xpath=//div[@id='cartItems']/form/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e7e088c9-fa89-40ff-b83d-dbc74b1ab315",
+      "comment": "",
+      "command": "click",
+      "target": "name=numeroCarta",
+      "targets": [
+        ["name=numeroCarta", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='numeroCarta']", "xpath:attributes"],
+        ["xpath=//div[@id='moduloCheckout']/form/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f0336211-2f1a-486a-9ea4-992f8ad802db",
+      "comment": "",
+      "command": "type",
+      "target": "name=numeroCarta",
+      "targets": [
+        ["name=numeroCarta", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='numeroCarta']", "xpath:attributes"],
+        ["xpath=//div[@id='moduloCheckout']/form/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/input", "xpath:position"]
+      ],
+      "value": "5333533353335333"
+    }, {
+      "id": "c2fdca5b-238e-4cf0-b01c-660f78777240",
+      "comment": "",
+      "command": "click",
+      "target": "name=tipoCarta",
+      "targets": [
+        ["name=tipoCarta", "name"],
+        ["css=select", "css:finder"],
+        ["xpath=//select[@name='tipoCarta']", "xpath:attributes"],
+        ["xpath=//div[@id='moduloCheckout']/form/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "67865bb2-5022-4382-bdf5-ad79eedc2ecc",
+      "comment": "",
+      "command": "select",
+      "target": "name=tipoCarta",
+      "targets": [],
+      "value": "label=Mastercard"
+    }, {
+      "id": "b41a6ca2-8d28-4271-8d5b-2ff10d4821dd",
+      "comment": "",
+      "command": "click",
+      "target": "name=tipoCarta",
+      "targets": [
+        ["name=tipoCarta", "name"],
+        ["css=select", "css:finder"],
+        ["xpath=//select[@name='tipoCarta']", "xpath:attributes"],
+        ["xpath=//div[@id='moduloCheckout']/form/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "450ccd17-992a-4b00-81ea-8acb75b59171",
+      "comment": "",
+      "command": "click",
+      "target": "id=compra",
+      "targets": [
+        ["id=compra", "id"],
+        ["css=#compra", "css:finder"],
+        ["xpath=//input[@id='compra']", "xpath:attributes"],
+        ["xpath=//div[@id='moduloCheckout']/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5efdf1f4-cb63-4c6a-83ca-72c0bb9e4ec2",
+      "comment": "Utente non loggato, acquista, si logga, acquista con successo",
+      "command": "assertText",
+      "target": "css=h2",
+      "targets": [
+        ["css=h2", "css:finder"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Acquisto effettuato correttamente')]", "xpath:innerText"]
+      ],
+      "value": "Acquisto effettuato correttamente"
+    }]
+  }, {
+    "id": "a72ffef1-f139-4518-8d5f-c65bcb76f670",
+    "name": "TC_ACQ5",
+    "commands": [{
+      "id": "115ac144-38a3-45a8-bb7f-8459975e4a96",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/ArtGalleryIS_war_exploded/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "325ba6f5-763e-4b6c-a789-1fbceeff2707",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x849",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "417aa96c-c2f8-4730-8ef5-1525bbeb7ec0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.item:nth-child(2) .sub",
+      "targets": [
+        ["css=.item:nth-child(2) .sub", "css:finder"],
+        ["xpath=(//input[@value='Vedi Quadro'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='masonry']/div[2]/form/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f8f919c1-2ac6-4de5-9519-7880aeb58e16",
+      "comment": "",
+      "command": "click",
+      "target": "css=.acquista",
+      "targets": [
+        ["css=.acquista", "css:finder"],
+        ["xpath=//input[@value='Aggiungi al carrello']", "xpath:attributes"],
+        ["xpath=//div[2]/form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ae78fe01-88fa-4a45-8a44-c29333b035a3",
+      "comment": "",
+      "command": "click",
+      "target": "css=form:nth-child(6) > button",
+      "targets": [
+        ["css=form:nth-child(6) > button", "css:finder"],
+        ["xpath=//div[@id='navbar']/form[4]/button", "xpath:idRelative"],
+        ["xpath=//form[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f97dbc44-1d4f-4f4e-a521-0f7b2add54f4",
+      "comment": "",
+      "command": "click",
+      "target": "id=checkoutButton",
+      "targets": [
+        ["id=checkoutButton", "id"],
+        ["name=checkout", "name"],
+        ["css=#checkoutButton", "css:finder"],
+        ["xpath=//input[@id='checkoutButton']", "xpath:attributes"],
+        ["xpath=//div[@id='cartItems']/form/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ff72b51e-71a7-4e63-a252-412a811eab75",
+      "comment": "",
+      "command": "click",
+      "target": "id=usernameRegistration",
+      "targets": [
+        ["id=usernameRegistration", "id"],
+        ["css=#usernameRegistration", "css:finder"],
+        ["xpath=//input[@id='usernameRegistration']", "xpath:attributes"],
+        ["xpath=//div[2]/form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "07c1e601-e591-493a-934a-e1a6acb36c3a",
+      "comment": "",
+      "command": "type",
+      "target": "id=usernameRegistration",
+      "targets": [
+        ["id=usernameRegistration", "id"],
+        ["css=#usernameRegistration", "css:finder"],
+        ["xpath=//input[@id='usernameRegistration']", "xpath:attributes"],
+        ["xpath=//div[2]/form/input", "xpath:position"]
+      ],
+      "value": "username"
+    }, {
+      "id": "2cb562d2-8c34-427b-bc1c-48f0f2730f7b",
+      "comment": "",
+      "command": "type",
+      "target": "id=passwordRegistration",
+      "targets": [
+        ["id=passwordRegistration", "id"],
+        ["css=#passwordRegistration", "css:finder"],
+        ["xpath=//input[@id='passwordRegistration']", "xpath:attributes"],
+        ["xpath=//form/input[2]", "xpath:position"]
+      ],
+      "value": "passwordpass"
+    }, {
+      "id": "7418f792-a763-4ce2-b7f0-03a24d4dd504",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form/input[3]", "xpath:position"]
+      ],
+      "value": "afnaf@gmail.com"
+    }, {
+      "id": "e8b806b9-dbed-4d45-b746-294612664707",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": "User"
+    }, {
+      "id": "999d316b-4a6c-4736-a8da-3af366b1b17f",
+      "comment": "",
+      "command": "type",
+      "target": "id=cognome",
+      "targets": [
+        ["id=cognome", "id"],
+        ["name=cognome", "name"],
+        ["css=#cognome", "css:finder"],
+        ["xpath=//input[@id='cognome']", "xpath:attributes"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": "Name"
+    }, {
+      "id": "97b50de9-94cb-4416-8dd5-3f1944590438",
+      "comment": "",
+      "command": "click",
+      "target": "id=naz",
+      "targets": [
+        ["id=naz", "id"],
+        ["name=nazionalita", "name"],
+        ["css=#naz", "css:finder"],
+        ["xpath=//select[@id='naz']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f04780bc-a245-4172-8af8-01c19ebb74fa",
+      "comment": "",
+      "command": "select",
+      "target": "id=naz",
+      "targets": [],
+      "value": "label=Angola"
+    }, {
+      "id": "48aa0036-cd61-4d11-a931-f5fc8ec62524",
+      "comment": "",
+      "command": "click",
+      "target": "id=naz",
+      "targets": [
+        ["id=naz", "id"],
+        ["name=nazionalita", "name"],
+        ["css=#naz", "css:finder"],
+        ["xpath=//select[@id='naz']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "12e173d7-3328-4b37-be70-c47d32c18e08",
+      "comment": "",
+      "command": "click",
+      "target": "css=.val:nth-child(8)",
+      "targets": [
+        ["css=.val:nth-child(8)", "css:finder"],
+        ["xpath=//input[@value='Register']", "xpath:attributes"],
+        ["xpath=//input[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5ef5d067-e35e-41ee-9dca-e921d1c35d8f",
+      "comment": "",
+      "command": "click",
+      "target": "css=form:nth-child(6) > button",
+      "targets": [
+        ["css=form:nth-child(6) > button", "css:finder"],
+        ["xpath=//div[@id='navbar']/form[4]/button", "xpath:idRelative"],
+        ["xpath=//form[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "94a1b11f-afbb-4fd8-b224-7d8fb566439e",
+      "comment": "",
+      "command": "click",
+      "target": "id=checkoutButton",
+      "targets": [
+        ["id=checkoutButton", "id"],
+        ["name=checkout", "name"],
+        ["css=#checkoutButton", "css:finder"],
+        ["xpath=//input[@id='checkoutButton']", "xpath:attributes"],
+        ["xpath=//div[@id='cartItems']/form/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6e0126fa-187d-4ed7-ad80-612be6f14d57",
+      "comment": "",
+      "command": "click",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c6af575d-bfb7-4317-93ec-0dfc7963c47f",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "username"
+    }, {
+      "id": "8ef7e0ca-9e20-406d-b828-8af276b2f7e7",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "passwordpass"
+    }, {
+      "id": "d5f56686-8a89-4dc7-bf3f-6da0605f339b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.log",
+      "targets": [
+        ["css=.log", "css:finder"],
+        ["xpath=//input[@value='Login']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cbb19fda-2e54-4946-9a8d-3db639683eb6",
+      "comment": "",
+      "command": "click",
+      "target": "css=form:nth-child(7) > button",
+      "targets": [
+        ["css=form:nth-child(7) > button", "css:finder"],
+        ["xpath=//div[@id='navbar']/form[5]/button", "xpath:idRelative"],
+        ["xpath=//form[5]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "81398e10-8a03-466f-8eb2-8eec5bbec0a3",
+      "comment": "",
+      "command": "click",
+      "target": "id=checkoutButton",
+      "targets": [
+        ["id=checkoutButton", "id"],
+        ["name=checkout", "name"],
+        ["css=#checkoutButton", "css:finder"],
+        ["xpath=//input[@id='checkoutButton']", "xpath:attributes"],
+        ["xpath=//div[@id='cartItems']/form/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6dfa085a-faf7-4e6f-994d-75445ed393fa",
+      "comment": "",
+      "command": "click",
+      "target": "name=numeroCarta",
+      "targets": [
+        ["name=numeroCarta", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='numeroCarta']", "xpath:attributes"],
+        ["xpath=//div[@id='moduloCheckout']/form/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "49999a7f-411c-4001-981a-a233decc7b9e",
+      "comment": "",
+      "command": "type",
+      "target": "name=numeroCarta",
+      "targets": [
+        ["name=numeroCarta", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='numeroCarta']", "xpath:attributes"],
+        ["xpath=//div[@id='moduloCheckout']/form/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/input", "xpath:position"]
+      ],
+      "value": "5333533353335333"
+    }, {
+      "id": "d4eced6c-ebae-4f54-b905-347bd3123086",
+      "comment": "",
+      "command": "click",
+      "target": "name=tipoCarta",
+      "targets": [
+        ["name=tipoCarta", "name"],
+        ["css=select", "css:finder"],
+        ["xpath=//select[@name='tipoCarta']", "xpath:attributes"],
+        ["xpath=//div[@id='moduloCheckout']/form/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1014bce3-5208-40dc-bbce-b9083feb2377",
+      "comment": "",
+      "command": "select",
+      "target": "name=tipoCarta",
+      "targets": [],
+      "value": "label=Diners"
+    }, {
+      "id": "3b87b887-7d1a-4100-ab37-e4ae4e30fd10",
+      "comment": "",
+      "command": "click",
+      "target": "name=tipoCarta",
+      "targets": [
+        ["name=tipoCarta", "name"],
+        ["css=select", "css:finder"],
+        ["xpath=//select[@name='tipoCarta']", "xpath:attributes"],
+        ["xpath=//div[@id='moduloCheckout']/form/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f7d9d7ba-b91c-4eb4-abcb-d05470b3ac57",
+      "comment": "",
+      "command": "click",
+      "target": "id=compra",
+      "targets": [
+        ["id=compra", "id"],
+        ["css=#compra", "css:finder"],
+        ["xpath=//input[@id='compra']", "xpath:attributes"],
+        ["xpath=//div[@id='moduloCheckout']/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f0605a02-2d51-4599-803c-a36d3e372fd1",
+      "comment": "Utente non registrato, acquista, si registra, logga, acquista con successo",
+      "command": "assertText",
+      "target": "css=h2",
+      "targets": [
+        ["css=h2", "css:finder"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Acquisto effettuato correttamente')]", "xpath:innerText"]
+      ],
+      "value": "Acquisto effettuato correttamente"
+    }]
+  }, {
+    "id": "f4d13357-e1e9-4e4d-b636-1d248d7c60eb",
+    "name": "TC_ACQ6",
+    "commands": [{
+      "id": "d749a6a2-6a3a-463c-bb68-1839489dd36e",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/ArtGalleryIS_war_exploded/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "25ba0888-f1c2-47e3-9d91-693a1885f796",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1051x815",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e32ad551-a2c1-4aba-8d08-094137081b51",
+      "comment": "",
+      "command": "click",
+      "target": "css=.item:nth-child(1) .sub",
+      "targets": [
+        ["css=.item:nth-child(1) .sub", "css:finder"],
+        ["xpath=//input[@value='Vedi Quadro']", "xpath:attributes"],
+        ["xpath=//div[@id='masonry']/div/form/input", "xpath:idRelative"],
+        ["xpath=//div/div/form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c386f5e5-24fb-423e-b097-6ac0d0c43f0c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.acquista",
+      "targets": [
+        ["css=.acquista", "css:finder"],
+        ["xpath=//input[@value='Aggiungi al carrello']", "xpath:attributes"],
+        ["xpath=//div[2]/form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b5f7b42b-42b0-4473-90ed-4efe640f75d4",
+      "comment": "",
+      "command": "click",
+      "target": "css=form:nth-child(6) > button",
+      "targets": [
+        ["css=form:nth-child(6) > button", "css:finder"],
+        ["xpath=//div[@id='navbar']/form[4]/button", "xpath:idRelative"],
+        ["xpath=//form[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e617babb-5ba6-4aee-b1a5-0e86100548f4",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=totaleCarrello",
+      "targets": [],
+      "value": "Total: $850000.0"
+    }, {
+      "id": "2ac3c215-feda-49a7-bb4a-ea0fa4905b72",
+      "comment": "",
+      "command": "click",
+      "target": "id=removeButton",
+      "targets": [
+        ["id=removeButton", "id"],
+        ["css=#removeButton", "css:finder"],
+        ["xpath=//input[@id='removeButton']", "xpath:attributes"],
+        ["xpath=//div[@id='2']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cc5045fd-cd40-4e30-86aa-61bf7d101207",
+      "comment": "Rimozione prodotto",
+      "command": "assertText",
+      "target": "id=totaleCarrello",
+      "targets": [],
+      "value": "Total: $0.0"
+    }]
+  }],
+  "suites": [{
+    "id": "48383b3e-2c1e-44dc-b9f0-530f3991dd05",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e972fbe2-0495-4298-bdc5-be4de7a20a5d"]
+  }],
+  "urls": ["http://localhost:8080/ArtGalleryIS_war_exploded/"],
+  "plugins": []
+}

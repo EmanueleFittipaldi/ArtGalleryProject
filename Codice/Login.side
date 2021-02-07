@@ -1,0 +1,333 @@
+{
+  "id": "e1881d5e-a537-41b0-9daa-e988fcbfe3c8",
+  "version": "2.0",
+  "name": "Login",
+  "url": "http://localhost:8080/ArtGalleryIS_war_exploded/",
+  "tests": [{
+    "id": "845a3970-30ea-423f-b371-9de4a58a66dd",
+    "name": "TC_LOGIN_1",
+    "commands": [{
+      "id": "d152cc66-6096-48b7-8428-5f5272c454a1",
+      "comment": "",
+      "command": "open",
+      "target": "/ArtGalleryIS_war_exploded/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d63bbf0e-fb64-4727-ba67-d530790a6300",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1376x754",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "beae8d97-9466-4e6f-9e93-578cebb1541b",
+      "comment": "",
+      "command": "click",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0871e0b9-c7c7-48d7-b759-c70a82d8c50c",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "pippo"
+    }, {
+      "id": "68474695-94a2-45e0-8b5e-47d735b9ff2a",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "emanuele123"
+    }, {
+      "id": "e2d89fef-3192-401d-bf10-4aa01bb47423",
+      "comment": "",
+      "command": "click",
+      "target": "css=.log",
+      "targets": [
+        ["css=.log", "css:finder"],
+        ["xpath=//input[@value='Login']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eab5b9f8-9fa4-41fc-b732-2126287814ce",
+      "comment": "Login Fallito: Username non presente nel db",
+      "command": "assertText",
+      "target": "xpath=//h1[contains(.,'An Exception has occurred. Please be careful')]",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//body/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'An Exception has occurred. Please be careful')]", "xpath:innerText"]
+      ],
+      "value": "An Exception has occurred. Please be careful"
+    }]
+  }, {
+    "id": "c2dd8fa7-6771-42cd-9277-207d8b59bb21",
+    "name": "TC_LOGIN_2",
+    "commands": [{
+      "id": "b3536dfa-23d6-48a9-ae40-ac856b515b04",
+      "comment": "",
+      "command": "open",
+      "target": "/ArtGalleryIS_war_exploded/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5615c721-78f7-458c-b04f-e0e2af180a1e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1376x754",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fcf7ba78-676d-437f-ab0b-f6ff97eda867",
+      "comment": "",
+      "command": "click",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "89f56b50-bb5d-4375-8692-563c065b2656",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "admin0"
+    }, {
+      "id": "dac11110-9bd9-4d17-9cfb-0cf0e8f418ef",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "emanuele321"
+    }, {
+      "id": "43214dff-42de-472d-8e66-5ce6493a075e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.log",
+      "targets": [
+        ["css=.log", "css:finder"],
+        ["xpath=//input[@value='Login']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7f000c5b-01f0-410b-90e6-85362760eb76",
+      "comment": "Login Fallito: Username presente, password non corretta",
+      "command": "assertText",
+      "target": "xpath=//h1[contains(.,'An Exception has occurred. Please be careful')]",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//body/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'An Exception has occurred. Please be careful')]", "xpath:innerText"]
+      ],
+      "value": "An Exception has occurred. Please be careful"
+    }]
+  }, {
+    "id": "bb8fd6a9-9353-43cb-8bed-6d91071ce0b2",
+    "name": "TC_LOGIN_3",
+    "commands": [{
+      "id": "685d91ed-98ec-47b1-a6e9-8292b5ea8540",
+      "comment": "",
+      "command": "open",
+      "target": "/ArtGalleryIS_war_exploded/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "61d417aa-bce9-45b1-abc6-852b50520f70",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1376x754",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8215f73c-e165-4650-94b8-c35537864d09",
+      "comment": "",
+      "command": "click",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b00921d5-4d57-46aa-b9ff-6cf7eac6bad3",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "pippo"
+    }, {
+      "id": "f8d871ea-ff5e-4deb-95e2-e913f853a18c",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "bob"
+    }, {
+      "id": "330abe30-c411-40c7-a698-5adde59f23c0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.log",
+      "targets": [
+        ["css=.log", "css:finder"],
+        ["xpath=//input[@value='Login']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "44e9760f-43d2-44d8-8cdf-533f0803b915",
+      "comment": "Login Fallito: Username e password non esistenti nel DB",
+      "command": "assertText",
+      "target": "xpath=//h1[contains(.,'An Exception has occurred. Please be careful')]",
+      "targets": [],
+      "value": "An Exception has occurred. Please be careful"
+    }]
+  }, {
+    "id": "904587a5-9e84-42ff-8abf-7495c8e9fbf1",
+    "name": "TC_LOGIN_4",
+    "commands": [{
+      "id": "dd9df665-094a-4b7f-baab-221d3368deed",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/ArtGalleryIS_war_exploded/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "be5a9c25-1ef3-4f6e-933d-ae2dbaa41003",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x849",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a080a95b-131d-4024-b634-badcabd35d9d",
+      "comment": "",
+      "command": "click",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c7422a1-5249-431f-ab8f-00e517bcebd3",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "admin2"
+    }, {
+      "id": "8132919f-9332-43d5-adec-a3260d0d4434",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "fedele123"
+    }, {
+      "id": "c956e4be-1ec8-40fe-9087-fba0c1f0229d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.log",
+      "targets": [
+        ["css=.log", "css:finder"],
+        ["xpath=//input[@value='Login']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a0393c56-b443-4b7f-a56c-ae7291c973aa",
+      "comment": "Login Successful ",
+      "command": "assertText",
+      "target": "css=h2",
+      "targets": [
+        ["css=h2", "css:finder"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Login avvenuto con successo.')]", "xpath:innerText"]
+      ],
+      "value": "Login avvenuto con successo."
+    }]
+  }],
+  "suites": [{
+    "id": "da919051-a365-4dc9-9dde-6f3dd5d71d5f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["845a3970-30ea-423f-b371-9de4a58a66dd"]
+  }],
+  "urls": ["http://localhost:8080/", "http://localhost:8080/ArtGalleryIS_war_exploded/"],
+  "plugins": []
+}

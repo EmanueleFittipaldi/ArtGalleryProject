@@ -1,0 +1,1747 @@
+{
+  "id": "0168eb41-12df-4ce1-ae85-9770c0c83a01",
+  "version": "2.0",
+  "name": "Registrazione",
+  "url": "http://localhost:8080/ArtGalleryIS_war_exploded/",
+  "tests": [{
+    "id": "fe4eaad4-ef97-4a40-89ee-1cec1be28141",
+    "name": "TC_REG1",
+    "commands": [{
+      "id": "bd744099-6792-4d44-8fd6-20bfb569d929",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/ArtGalleryIS_war_exploded/handler?form=home",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9c95cca7-8cbb-46ef-a7b1-46d0042910be",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x836",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1feb93c0-76f4-498a-ac82-0c785e220a87",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Registrazione",
+      "targets": [
+        ["linkText=Registrazione", "linkText"],
+        ["css=.email", "css:finder"],
+        ["xpath=//a[contains(text(),'Registrazione')]", "xpath:link"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'login-servlet')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Registrazione')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a63f4c5c-c34d-42a5-ac3c-d9ab13218020",
+      "comment": "",
+      "command": "click",
+      "target": "css=.val:nth-child(8)",
+      "targets": [
+        ["css=.val:nth-child(8)", "css:finder"],
+        ["xpath=//input[@value='Register']", "xpath:attributes"],
+        ["xpath=//input[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "23f1b5cd-0c84-4dd4-a03d-7537f1fd18da",
+      "comment": "Registrazione Fallita: tutti i campi vuoti",
+      "command": "assertText",
+      "target": "xpath=//h1[contains(.,'An Exception has occurred. Please be careful')]",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//body/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'An Exception has occurred. Please be careful')]", "xpath:innerText"]
+      ],
+      "value": "An Exception has occurred. Please be careful"
+    }]
+  }, {
+    "id": "b8b11343-28e4-44bb-8bbb-503d500f909a",
+    "name": "TC_REG2",
+    "commands": [{
+      "id": "b41b653c-ce21-4c2c-81f3-258d1005a2d5",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/ArtGalleryIS_war_exploded/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6180fad7-9929-4392-bd89-cd5116753098",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x835",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "da7ccd63-1072-4b19-8427-a86d94bfb6dc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Registrazione",
+      "targets": [
+        ["linkText=Registrazione", "linkText"],
+        ["css=.email", "css:finder"],
+        ["xpath=//a[contains(text(),'Registrazione')]", "xpath:link"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'login-servlet')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Registrazione')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "77b1ad90-bae5-4d32-bab3-ad88bc558c59",
+      "comment": "",
+      "command": "click",
+      "target": "id=usernameRegistration",
+      "targets": [
+        ["id=usernameRegistration", "id"],
+        ["css=#usernameRegistration", "css:finder"],
+        ["xpath=//input[@id='usernameRegistration']", "xpath:attributes"],
+        ["xpath=//div[2]/form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a69851bb-b27e-4f95-9131-76dc17bf3f03",
+      "comment": "",
+      "command": "type",
+      "target": "id=usernameRegistration",
+      "targets": [
+        ["id=usernameRegistration", "id"],
+        ["css=#usernameRegistration", "css:finder"],
+        ["xpath=//input[@id='usernameRegistration']", "xpath:attributes"],
+        ["xpath=//div[2]/form/input", "xpath:position"]
+      ],
+      "value": "123"
+    }, {
+      "id": "587545ec-2d39-44d7-bfeb-6b59c5e6f456",
+      "comment": "",
+      "command": "click",
+      "target": "css=.val:nth-child(8)",
+      "targets": [
+        ["css=.val:nth-child(8)", "css:finder"],
+        ["xpath=//input[@value='Register']", "xpath:attributes"],
+        ["xpath=//input[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "425e69c9-ed19-4b1b-bc6b-de6d51c657ca",
+      "comment": "Registrazione Fallita:  formato username errato + altri campi vuoti",
+      "command": "assertText",
+      "target": "xpath=//h1[contains(.,'An Exception has occurred. Please be careful')]",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//body/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'An Exception has occurred. Please be careful')]", "xpath:innerText"]
+      ],
+      "value": "An Exception has occurred. Please be careful"
+    }]
+  }, {
+    "id": "0da2ad68-29c2-411e-a31f-9d003045b3ad",
+    "name": "TC_REG3",
+    "commands": [{
+      "id": "d32a4a2b-16bd-4999-a8df-b695f1d96b30",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/ArtGalleryIS_war_exploded/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4c32c1ac-f901-4673-9018-eeb288a3cf74",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x835",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6cc4def9-e74c-4c2d-97a2-025c3fe8f7fa",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Registrazione",
+      "targets": [
+        ["linkText=Registrazione", "linkText"],
+        ["css=.email", "css:finder"],
+        ["xpath=//a[contains(text(),'Registrazione')]", "xpath:link"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'login-servlet')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Registrazione')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "44cc2fb3-49a8-4532-952e-aba2c525804e",
+      "comment": "",
+      "command": "click",
+      "target": "id=usernameRegistration",
+      "targets": [
+        ["id=usernameRegistration", "id"],
+        ["css=#usernameRegistration", "css:finder"],
+        ["xpath=//input[@id='usernameRegistration']", "xpath:attributes"],
+        ["xpath=//div[2]/form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c25e89b1-1fda-4faa-838e-ed2bc531b52b",
+      "comment": "",
+      "command": "type",
+      "target": "id=usernameRegistration",
+      "targets": [
+        ["id=usernameRegistration", "id"],
+        ["css=#usernameRegistration", "css:finder"],
+        ["xpath=//input[@id='usernameRegistration']", "xpath:attributes"],
+        ["xpath=//div[2]/form/input", "xpath:position"]
+      ],
+      "value": "fedelemauro"
+    }, {
+      "id": "f54d7dcd-c0fa-4072-9b79-dafd6a90d595",
+      "comment": "",
+      "command": "type",
+      "target": "id=passwordRegistration",
+      "targets": [
+        ["id=passwordRegistration", "id"],
+        ["css=#passwordRegistration", "css:finder"],
+        ["xpath=//input[@id='passwordRegistration']", "xpath:attributes"],
+        ["xpath=//form/input[2]", "xpath:position"]
+      ],
+      "value": "123a"
+    }, {
+      "id": "ba445fb8-1340-47be-bfc0-f93c0a8b449b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.val:nth-child(8)",
+      "targets": [
+        ["css=.val:nth-child(8)", "css:finder"],
+        ["xpath=//input[@value='Register']", "xpath:attributes"],
+        ["xpath=//input[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "87864c1f-89c5-4043-8fa8-672467839f2b",
+      "comment": "Registrazione Fallita: formato password errato  + altri campi vuoti",
+      "command": "assertText",
+      "target": "xpath=//h1[contains(.,'An Exception has occurred. Please be careful')]",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//body/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'An Exception has occurred. Please be careful')]", "xpath:innerText"]
+      ],
+      "value": "An Exception has occurred. Please be careful"
+    }]
+  }, {
+    "id": "14686de1-8e55-434c-90e3-3282a9026785",
+    "name": "TC_REG4",
+    "commands": [{
+      "id": "3bd8c9e4-ea3b-4a69-b8bd-2ac4c97152b0",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/ArtGalleryIS_war_exploded/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "557cf7cf-70ee-48bf-a100-ed253c93e69e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x835",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ef482b7b-acbf-4a51-a712-6a3d3371ecf0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Registrazione",
+      "targets": [
+        ["linkText=Registrazione", "linkText"],
+        ["css=.email", "css:finder"],
+        ["xpath=//a[contains(text(),'Registrazione')]", "xpath:link"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'login-servlet')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Registrazione')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "28a9655a-180d-4afb-a693-81d18d4dca63",
+      "comment": "",
+      "command": "click",
+      "target": "id=usernameRegistration",
+      "targets": [
+        ["id=usernameRegistration", "id"],
+        ["css=#usernameRegistration", "css:finder"],
+        ["xpath=//input[@id='usernameRegistration']", "xpath:attributes"],
+        ["xpath=//div[2]/form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bfead22c-6098-4a53-bac2-ec4ee9f3dfad",
+      "comment": "",
+      "command": "type",
+      "target": "id=usernameRegistration",
+      "targets": [
+        ["id=usernameRegistration", "id"],
+        ["css=#usernameRegistration", "css:finder"],
+        ["xpath=//input[@id='usernameRegistration']", "xpath:attributes"],
+        ["xpath=//div[2]/form/input", "xpath:position"]
+      ],
+      "value": "fedelemauro"
+    }, {
+      "id": "acb56c11-1a03-43a9-912c-cbb79f2c84ce",
+      "comment": "",
+      "command": "type",
+      "target": "id=passwordRegistration",
+      "targets": [
+        ["id=passwordRegistration", "id"],
+        ["css=#passwordRegistration", "css:finder"],
+        ["xpath=//input[@id='passwordRegistration']", "xpath:attributes"],
+        ["xpath=//form/input[2]", "xpath:position"]
+      ],
+      "value": "fedelemauro"
+    }, {
+      "id": "6747f33c-2d27-46e5-bb97-77f6be7471cc",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form/input[3]", "xpath:position"]
+      ],
+      "value": "fedele@email"
+    }, {
+      "id": "9998acf7-43e9-41e2-bee9-61edd3922f6c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.val:nth-child(8)",
+      "targets": [
+        ["css=.val:nth-child(8)", "css:finder"],
+        ["xpath=//input[@value='Register']", "xpath:attributes"],
+        ["xpath=//input[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b426cb6-8f99-434d-ba80-84f88229fda2",
+      "comment": "Registrazione Fallita: formato email errato  + altri campi vuoti",
+      "command": "assertText",
+      "target": "xpath=//h1[contains(.,'An Exception has occurred. Please be careful')]",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//body/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'An Exception has occurred. Please be careful')]", "xpath:innerText"]
+      ],
+      "value": "An Exception has occurred. Please be careful"
+    }]
+  }, {
+    "id": "6c847534-ab12-484a-8266-6e4dcb365a42",
+    "name": "TC_REG7",
+    "commands": [{
+      "id": "54ab679b-8962-4b14-af8e-8fa7a6ff814f",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/ArtGalleryIS_war_exploded/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "873e2f80-abbb-4748-af82-6d5b1c84f5fa",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x835",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dfeb72ba-c77c-4882-99c1-e3cfd08e7ab6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Registrazione",
+      "targets": [
+        ["linkText=Registrazione", "linkText"],
+        ["css=.email", "css:finder"],
+        ["xpath=//a[contains(text(),'Registrazione')]", "xpath:link"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'login-servlet')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Registrazione')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b3365af1-beaa-4913-9e53-8b3e9f8a9dc4",
+      "comment": "",
+      "command": "click",
+      "target": "id=usernameRegistration",
+      "targets": [
+        ["id=usernameRegistration", "id"],
+        ["css=#usernameRegistration", "css:finder"],
+        ["xpath=//input[@id='usernameRegistration']", "xpath:attributes"],
+        ["xpath=//div[2]/form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cde0fba6-ccb7-4fb9-94ea-bc068f328039",
+      "comment": "",
+      "command": "type",
+      "target": "id=usernameRegistration",
+      "targets": [
+        ["id=usernameRegistration", "id"],
+        ["css=#usernameRegistration", "css:finder"],
+        ["xpath=//input[@id='usernameRegistration']", "xpath:attributes"],
+        ["xpath=//div[2]/form/input", "xpath:position"]
+      ],
+      "value": "fedele1"
+    }, {
+      "id": "757147ac-6aa5-467c-b90f-38a83ce832dc",
+      "comment": "",
+      "command": "type",
+      "target": "id=passwordRegistration",
+      "targets": [
+        ["id=passwordRegistration", "id"],
+        ["css=#passwordRegistration", "css:finder"],
+        ["xpath=//input[@id='passwordRegistration']", "xpath:attributes"],
+        ["xpath=//form/input[2]", "xpath:position"]
+      ],
+      "value": "asd"
+    }, {
+      "id": "4a7360ba-08ed-4354-bccc-a96cd31d0ea4",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form/input[3]", "xpath:position"]
+      ],
+      "value": "afa@c"
+    }, {
+      "id": "080727f5-a6c8-420e-9ef4-79ad8d39ff8c",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": "fe1"
+    }, {
+      "id": "ebf24b6e-a72d-4236-b345-2b093edd9566",
+      "comment": "",
+      "command": "type",
+      "target": "id=cognome",
+      "targets": [
+        ["id=cognome", "id"],
+        ["name=cognome", "name"],
+        ["css=#cognome", "css:finder"],
+        ["xpath=//input[@id='cognome']", "xpath:attributes"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": "de2"
+    }, {
+      "id": "6a959ccf-0949-47ce-8217-ee73004a24e7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.val:nth-child(8)",
+      "targets": [
+        ["css=.val:nth-child(8)", "css:finder"],
+        ["xpath=//input[@value='Register']", "xpath:attributes"],
+        ["xpath=//input[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ff928e2d-5249-4f7c-a688-d199100f844c",
+      "comment": "Registrazione Fallita: tutti i campi errati",
+      "command": "assertText",
+      "target": "xpath=//h1[contains(.,'An Exception has occurred. Please be careful')]",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//body/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'An Exception has occurred. Please be careful')]", "xpath:innerText"]
+      ],
+      "value": "An Exception has occurred. Please be careful"
+    }]
+  }, {
+    "id": "171d0e95-ff25-4eff-aa27-5c9a60229fa4",
+    "name": "TC_REG8",
+    "commands": [{
+      "id": "44e6b884-a81a-4bad-b611-97b7acab5835",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/ArtGalleryIS_war_exploded/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "45e2f4d5-545e-4cd5-a6f0-816248ade5bc",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x835",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7806c531-62d3-4934-ac05-1127121fb0c4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Registrazione",
+      "targets": [
+        ["linkText=Registrazione", "linkText"],
+        ["css=.email", "css:finder"],
+        ["xpath=//a[contains(text(),'Registrazione')]", "xpath:link"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'login-servlet')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Registrazione')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4002e98e-92b1-47d8-a281-1edd366a6c7d",
+      "comment": "",
+      "command": "click",
+      "target": "id=usernameRegistration",
+      "targets": [
+        ["id=usernameRegistration", "id"],
+        ["css=#usernameRegistration", "css:finder"],
+        ["xpath=//input[@id='usernameRegistration']", "xpath:attributes"],
+        ["xpath=//div[2]/form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bdc7441e-2c50-4e32-a6a9-2a052e1f33de",
+      "comment": "",
+      "command": "type",
+      "target": "id=usernameRegistration",
+      "targets": [
+        ["id=usernameRegistration", "id"],
+        ["css=#usernameRegistration", "css:finder"],
+        ["xpath=//input[@id='usernameRegistration']", "xpath:attributes"],
+        ["xpath=//div[2]/form/input", "xpath:position"]
+      ],
+      "value": "fedelemauro"
+    }, {
+      "id": "d8aec881-8cc1-4f13-8fee-2a76e554532a",
+      "comment": "",
+      "command": "type",
+      "target": "id=passwordRegistration",
+      "targets": [
+        ["id=passwordRegistration", "id"],
+        ["css=#passwordRegistration", "css:finder"],
+        ["xpath=//input[@id='passwordRegistration']", "xpath:attributes"],
+        ["xpath=//form/input[2]", "xpath:position"]
+      ],
+      "value": "fedelemauro"
+    }, {
+      "id": "4bb807c2-32a4-4b95-86a8-846134625c11",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form/input[3]", "xpath:position"]
+      ],
+      "value": "fedele@gmail.com"
+    }, {
+      "id": "19e8cf8f-b4a9-4c37-80b7-3a0ba4d4adc8",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": "Fedele"
+    }, {
+      "id": "ee99ccae-9bfe-4724-b0dd-417a32b4007f",
+      "comment": "",
+      "command": "type",
+      "target": "id=cognome",
+      "targets": [
+        ["id=cognome", "id"],
+        ["name=cognome", "name"],
+        ["css=#cognome", "css:finder"],
+        ["xpath=//input[@id='cognome']", "xpath:attributes"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": "Mauro"
+    }, {
+      "id": "473de563-ea7d-4a1b-b6b4-7b5299588e39",
+      "comment": "",
+      "command": "click",
+      "target": "id=naz",
+      "targets": [
+        ["id=naz", "id"],
+        ["name=nazionalita", "name"],
+        ["css=#naz", "css:finder"],
+        ["xpath=//select[@id='naz']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a6324825-a605-48f7-a064-ab3be5b79c67",
+      "comment": "",
+      "command": "select",
+      "target": "id=naz",
+      "targets": [],
+      "value": "label=Italia"
+    }, {
+      "id": "44163fa4-82f8-411c-93cc-eacad575ca3c",
+      "comment": "",
+      "command": "click",
+      "target": "id=naz",
+      "targets": [
+        ["id=naz", "id"],
+        ["name=nazionalita", "name"],
+        ["css=#naz", "css:finder"],
+        ["xpath=//select[@id='naz']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "36738873-757a-4003-a8ff-ce0889adc3d6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.val:nth-child(8)",
+      "targets": [
+        ["css=.val:nth-child(8)", "css:finder"],
+        ["xpath=//input[@value='Register']", "xpath:attributes"],
+        ["xpath=//input[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "76dcbbcf-dbbf-4233-8b00-fbfa134b5bdf",
+      "comment": "Registrazione Fallita: username già presente nel sistema",
+      "command": "assertText",
+      "target": "xpath=//h1[contains(.,'An Exception has occurred. Please be careful')]",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//body/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'An Exception has occurred. Please be careful')]", "xpath:innerText"]
+      ],
+      "value": "An Exception has occurred. Please be careful"
+    }]
+  }, {
+    "id": "4a3be746-d57c-4461-abad-24c710af526c",
+    "name": "TC_REG9",
+    "commands": [{
+      "id": "c12eb68e-034b-473b-903a-86ecf79e3e48",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/ArtGalleryIS_war_exploded/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "866084b5-ee02-4c78-a54d-884bf2fc4ba2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x835",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b12ba2db-4584-4d10-af1c-51d1a9a5a22b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Registrazione",
+      "targets": [
+        ["linkText=Registrazione", "linkText"],
+        ["css=.email", "css:finder"],
+        ["xpath=//a[contains(text(),'Registrazione')]", "xpath:link"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'login-servlet')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Registrazione')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0c0041e6-46ff-4535-8e17-463ee1419a93",
+      "comment": "",
+      "command": "click",
+      "target": "id=usernameRegistration",
+      "targets": [
+        ["id=usernameRegistration", "id"],
+        ["css=#usernameRegistration", "css:finder"],
+        ["xpath=//input[@id='usernameRegistration']", "xpath:attributes"],
+        ["xpath=//div[2]/form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e2989c65-8726-43ae-a00e-84792a3f3e8d",
+      "comment": "",
+      "command": "type",
+      "target": "id=usernameRegistration",
+      "targets": [
+        ["id=usernameRegistration", "id"],
+        ["css=#usernameRegistration", "css:finder"],
+        ["xpath=//input[@id='usernameRegistration']", "xpath:attributes"],
+        ["xpath=//div[2]/form/input", "xpath:position"]
+      ],
+      "value": "mauryfedele122"
+    }, {
+      "id": "92f4ad5d-c372-4f75-9d5e-48077efa0e63",
+      "comment": "",
+      "command": "type",
+      "target": "id=passwordRegistration",
+      "targets": [
+        ["id=passwordRegistration", "id"],
+        ["css=#passwordRegistration", "css:finder"],
+        ["xpath=//input[@id='passwordRegistration']", "xpath:attributes"],
+        ["xpath=//form/input[2]", "xpath:position"]
+      ],
+      "value": "maurofedele1"
+    }, {
+      "id": "d9854527-782e-40c8-a518-df9d40be9730",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form/input[3]", "xpath:position"]
+      ],
+      "value": "mauryx2@gmail.com"
+    }, {
+      "id": "1c2a7059-86a7-4662-a2e6-b60e560001f4",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": "Fedele"
+    }, {
+      "id": "6384027e-2a84-4e8a-8a58-37afbe885953",
+      "comment": "",
+      "command": "type",
+      "target": "id=cognome",
+      "targets": [
+        ["id=cognome", "id"],
+        ["name=cognome", "name"],
+        ["css=#cognome", "css:finder"],
+        ["xpath=//input[@id='cognome']", "xpath:attributes"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": "Mauro"
+    }, {
+      "id": "1a014ae6-4f63-4db1-bd51-6a51bb947621",
+      "comment": "",
+      "command": "click",
+      "target": "css=body",
+      "targets": [
+        ["css=body", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "64f7c39a-160e-42aa-bb9e-5dd4ffe05d5c",
+      "comment": "",
+      "command": "click",
+      "target": "id=naz",
+      "targets": [
+        ["id=naz", "id"],
+        ["name=nazionalita", "name"],
+        ["css=#naz", "css:finder"],
+        ["xpath=//select[@id='naz']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bb6c6f29-2b2b-4bba-835e-f43bbddf9346",
+      "comment": "",
+      "command": "select",
+      "target": "id=naz",
+      "targets": [],
+      "value": "label=Italia"
+    }, {
+      "id": "d40aeb7d-27cd-467d-af45-deb4cee55f8c",
+      "comment": "",
+      "command": "click",
+      "target": "id=naz",
+      "targets": [
+        ["id=naz", "id"],
+        ["name=nazionalita", "name"],
+        ["css=#naz", "css:finder"],
+        ["xpath=//select[@id='naz']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6b57e95e-ef26-4dc4-a493-dee13b9b0b5f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.val:nth-child(8)",
+      "targets": [
+        ["css=.val:nth-child(8)", "css:finder"],
+        ["xpath=//input[@value='Register']", "xpath:attributes"],
+        ["xpath=//input[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cee16c28-1bd4-4056-af8a-b2c00356c55f",
+      "comment": "Registazione effettuata con successo",
+      "command": "assertText",
+      "target": "xpath=//h2[contains(.,'Registrazione avvenuta con successo.')]",
+      "targets": [],
+      "value": "Registration Successful"
+    }]
+  }, {
+    "id": "105e3609-ef76-4966-b880-1ec61535404d",
+    "name": "TC_REG10",
+    "commands": [{
+      "id": "05b330b2-efb7-4c87-935a-4000ab4d990d",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/ArtGalleryIS_war_exploded/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bb4eacfe-387c-4092-b9b0-e774db7f9b7a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x835",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "72a9251b-746d-4074-8fef-78d7edf1c7cc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Registrazione",
+      "targets": [
+        ["linkText=Registrazione", "linkText"],
+        ["css=.email", "css:finder"],
+        ["xpath=//a[contains(text(),'Registrazione')]", "xpath:link"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'login-servlet')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Registrazione')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "43866eb3-42bf-4f56-879d-5dd0e7def0a2",
+      "comment": "",
+      "command": "click",
+      "target": "id=usernameRegistration",
+      "targets": [
+        ["id=usernameRegistration", "id"],
+        ["css=#usernameRegistration", "css:finder"],
+        ["xpath=//input[@id='usernameRegistration']", "xpath:attributes"],
+        ["xpath=//div[2]/form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "94b0e66a-e15e-431b-9a10-d801ace15aca",
+      "comment": "",
+      "command": "type",
+      "target": "id=usernameRegistration",
+      "targets": [
+        ["id=usernameRegistration", "id"],
+        ["css=#usernameRegistration", "css:finder"],
+        ["xpath=//input[@id='usernameRegistration']", "xpath:attributes"],
+        ["xpath=//div[2]/form/input", "xpath:position"]
+      ],
+      "value": "Fedelex"
+    }, {
+      "id": "113ee045-dd20-48f4-bf94-d612e316eefd",
+      "comment": "",
+      "command": "type",
+      "target": "id=passwordRegistration",
+      "targets": [
+        ["id=passwordRegistration", "id"],
+        ["css=#passwordRegistration", "css:finder"],
+        ["xpath=//input[@id='passwordRegistration']", "xpath:attributes"],
+        ["xpath=//form/input[2]", "xpath:position"]
+      ],
+      "value": "maurox"
+    }, {
+      "id": "14ee10a1-1539-4700-b1be-aa33861f66c3",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form/input[3]", "xpath:position"]
+      ],
+      "value": "mauro@gmail.com"
+    }, {
+      "id": "6207e6ac-2bf1-43e9-adb5-a39489583361",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": "Fedelex"
+    }, {
+      "id": "a53c601c-490d-4123-b164-845815804fd2",
+      "comment": "",
+      "command": "type",
+      "target": "id=cognome",
+      "targets": [
+        ["id=cognome", "id"],
+        ["name=cognome", "name"],
+        ["css=#cognome", "css:finder"],
+        ["xpath=//input[@id='cognome']", "xpath:attributes"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": "Maurox"
+    }, {
+      "id": "1485d88f-8d07-4d88-a72b-9adae6747bd5",
+      "comment": "",
+      "command": "click",
+      "target": "id=naz",
+      "targets": [
+        ["id=naz", "id"],
+        ["name=nazionalita", "name"],
+        ["css=#naz", "css:finder"],
+        ["xpath=//select[@id='naz']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "da6447d2-b7c9-4a94-8991-ee8bc2cd94b9",
+      "comment": "",
+      "command": "select",
+      "target": "id=naz",
+      "targets": [],
+      "value": "label=Anguilla"
+    }, {
+      "id": "44a4b8d3-0c04-4031-bcab-63fae7e18b52",
+      "comment": "",
+      "command": "click",
+      "target": "id=naz",
+      "targets": [
+        ["id=naz", "id"],
+        ["name=nazionalita", "name"],
+        ["css=#naz", "css:finder"],
+        ["xpath=//select[@id='naz']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2f37fa5d-837b-4c78-8ebf-0a2e6b974a30",
+      "comment": "",
+      "command": "click",
+      "target": "css=.val:nth-child(8)",
+      "targets": [
+        ["css=.val:nth-child(8)", "css:finder"],
+        ["xpath=//input[@value='Register']", "xpath:attributes"],
+        ["xpath=//input[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1eb28bf6-41ec-4e4e-96ae-c9ed04e018ca",
+      "comment": "Registrazione Fallita: email già presente nel sistema",
+      "command": "assertText",
+      "target": "xpath=//h1[contains(.,'An Exception has occurred. Please be careful')]",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//body/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'An Exception has occurred. Please be careful')]", "xpath:innerText"]
+      ],
+      "value": "An Exception has occurred. Please be careful"
+    }]
+  }, {
+    "id": "e8f9b324-7dc8-4d73-9287-19335730312d",
+    "name": "TC_REG5",
+    "commands": [{
+      "id": "6f28ba93-f6c9-40b0-93a3-87abd5a7b90f",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/ArtGalleryIS_war_exploded/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2229e737-c98a-4397-a613-8b6908b3dd8b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x835",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fba17bff-a75b-42be-b990-a2ea0c6db0d7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Registrazione",
+      "targets": [
+        ["linkText=Registrazione", "linkText"],
+        ["css=.email", "css:finder"],
+        ["xpath=//a[contains(text(),'Registrazione')]", "xpath:link"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'login-servlet')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Registrazione')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e89305f-718a-4e01-a0b3-e71f170bf06b",
+      "comment": "",
+      "command": "click",
+      "target": "id=usernameRegistration",
+      "targets": [
+        ["id=usernameRegistration", "id"],
+        ["css=#usernameRegistration", "css:finder"],
+        ["xpath=//input[@id='usernameRegistration']", "xpath:attributes"],
+        ["xpath=//div[2]/form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "34dd4fda-f8b9-4ff3-a402-838c8b3732b2",
+      "comment": "",
+      "command": "type",
+      "target": "id=usernameRegistration",
+      "targets": [
+        ["id=usernameRegistration", "id"],
+        ["css=#usernameRegistration", "css:finder"],
+        ["xpath=//input[@id='usernameRegistration']", "xpath:attributes"],
+        ["xpath=//div[2]/form/input", "xpath:position"]
+      ],
+      "value": "fedmau1"
+    }, {
+      "id": "33afb0ae-9399-4715-9fe1-e924a4458764",
+      "comment": "",
+      "command": "type",
+      "target": "id=passwordRegistration",
+      "targets": [
+        ["id=passwordRegistration", "id"],
+        ["css=#passwordRegistration", "css:finder"],
+        ["xpath=//input[@id='passwordRegistration']", "xpath:attributes"],
+        ["xpath=//form/input[2]", "xpath:position"]
+      ],
+      "value": "fedmauro123"
+    }, {
+      "id": "47f00e95-0f65-4d18-8ba9-e82d7e92bab8",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form/input[3]", "xpath:position"]
+      ],
+      "value": "fed@g.c"
+    }, {
+      "id": "198c25f2-614d-4e3c-aa3e-a4221574089b",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": "Fed1"
+    }, {
+      "id": "4bdbaf01-d786-4fbb-ba29-598657f60717",
+      "comment": "",
+      "command": "type",
+      "target": "id=cognome",
+      "targets": [
+        ["id=cognome", "id"],
+        ["name=cognome", "name"],
+        ["css=#cognome", "css:finder"],
+        ["xpath=//input[@id='cognome']", "xpath:attributes"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": "Mauro"
+    }, {
+      "id": "d9d3cc80-225d-40d4-abd8-299a3dcda159",
+      "comment": "",
+      "command": "click",
+      "target": "css=body",
+      "targets": [
+        ["css=body", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "058aa11c-d1c7-42ea-aab2-6d65076d4047",
+      "comment": "",
+      "command": "click",
+      "target": "css=form:nth-child(1)",
+      "targets": [
+        ["css=form:nth-child(1)", "css:finder"],
+        ["xpath=//form[@action='registration-servlet']", "xpath:attributes"],
+        ["xpath=//div[2]/form", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf054c0f-e7b0-43df-956e-dcaf0c9a4d06",
+      "comment": "",
+      "command": "click",
+      "target": "css=form:nth-child(1)",
+      "targets": [
+        ["css=form:nth-child(1)", "css:finder"],
+        ["xpath=//form[@action='registration-servlet']", "xpath:attributes"],
+        ["xpath=//div[2]/form", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a17a3d92-0205-4514-af85-67f3ec96d174",
+      "comment": "",
+      "command": "click",
+      "target": "id=naz",
+      "targets": [
+        ["id=naz", "id"],
+        ["name=nazionalita", "name"],
+        ["css=#naz", "css:finder"],
+        ["xpath=//select[@id='naz']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "172c32e4-96df-4874-9fad-98a96f87a4cf",
+      "comment": "",
+      "command": "select",
+      "target": "id=naz",
+      "targets": [],
+      "value": "label=Angola"
+    }, {
+      "id": "ed7907d5-4623-44a2-9d3b-504101ef8057",
+      "comment": "",
+      "command": "click",
+      "target": "id=naz",
+      "targets": [
+        ["id=naz", "id"],
+        ["name=nazionalita", "name"],
+        ["css=#naz", "css:finder"],
+        ["xpath=//select[@id='naz']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "27f4050f-b349-428c-99ff-bea539f56a0a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.val:nth-child(8)",
+      "targets": [
+        ["css=.val:nth-child(8)", "css:finder"],
+        ["xpath=//input[@value='Register']", "xpath:attributes"],
+        ["xpath=//input[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e921e222-da41-4790-be53-0e1a31ab2f1c",
+      "comment": "Registrazione Fallita: formato nome non corretto + altri campi vuoti",
+      "command": "assertText",
+      "target": "xpath=//h1[contains(.,'An Exception has occurred. Please be careful')]",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//body/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'An Exception has occurred. Please be careful')]", "xpath:innerText"]
+      ],
+      "value": "An Exception has occurred. Please be careful"
+    }]
+  }, {
+    "id": "6c03d2ef-5a05-46d0-b535-2afc9f6f40f0",
+    "name": "TC_REG6",
+    "commands": [{
+      "id": "6db7bffc-1a4d-4c1c-8b4b-81484558de80",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/ArtGalleryIS_war_exploded/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bca47976-b376-4f59-9a83-b44a34d0fdb6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x835",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cfc992b7-4913-4c2d-a743-670699625b99",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Registrazione",
+      "targets": [
+        ["linkText=Registrazione", "linkText"],
+        ["css=.email", "css:finder"],
+        ["xpath=//a[contains(text(),'Registrazione')]", "xpath:link"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'login-servlet')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Registrazione')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "68fe88f1-332e-480f-b542-611bee8c9fc6",
+      "comment": "",
+      "command": "click",
+      "target": "id=usernameRegistration",
+      "targets": [
+        ["id=usernameRegistration", "id"],
+        ["css=#usernameRegistration", "css:finder"],
+        ["xpath=//input[@id='usernameRegistration']", "xpath:attributes"],
+        ["xpath=//div[2]/form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8284c849-0fdd-4c4e-b661-737034b24ff0",
+      "comment": "",
+      "command": "type",
+      "target": "id=usernameRegistration",
+      "targets": [
+        ["id=usernameRegistration", "id"],
+        ["css=#usernameRegistration", "css:finder"],
+        ["xpath=//input[@id='usernameRegistration']", "xpath:attributes"],
+        ["xpath=//div[2]/form/input", "xpath:position"]
+      ],
+      "value": "fedmau1"
+    }, {
+      "id": "7e1347a8-44e1-4139-adb1-1706a1c551b0",
+      "comment": "",
+      "command": "type",
+      "target": "id=passwordRegistration",
+      "targets": [
+        ["id=passwordRegistration", "id"],
+        ["css=#passwordRegistration", "css:finder"],
+        ["xpath=//input[@id='passwordRegistration']", "xpath:attributes"],
+        ["xpath=//form/input[2]", "xpath:position"]
+      ],
+      "value": "fedmauro123"
+    }, {
+      "id": "09ae4b79-69ab-425d-8d64-7832df0de413",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form/input[3]", "xpath:position"]
+      ],
+      "value": "fed@g.c"
+    }, {
+      "id": "51fd32eb-c9ee-449d-8b7d-97f89bbd2ad9",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": "Fed"
+    }, {
+      "id": "2fc2ef10-6472-414a-99fb-352c183c9efd",
+      "comment": "",
+      "command": "type",
+      "target": "id=cognome",
+      "targets": [
+        ["id=cognome", "id"],
+        ["name=cognome", "name"],
+        ["css=#cognome", "css:finder"],
+        ["xpath=//input[@id='cognome']", "xpath:attributes"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": "Mauro2"
+    }, {
+      "id": "bff0088f-7c6d-4ad9-b306-51d6fbcec5a0",
+      "comment": "",
+      "command": "click",
+      "target": "css=body",
+      "targets": [
+        ["css=body", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8bdb44c3-0658-4831-86a9-d0d5b4c091b7",
+      "comment": "",
+      "command": "click",
+      "target": "css=form:nth-child(1)",
+      "targets": [
+        ["css=form:nth-child(1)", "css:finder"],
+        ["xpath=//form[@action='registration-servlet']", "xpath:attributes"],
+        ["xpath=//div[2]/form", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "018d84ef-150a-41fc-b80d-2d55f14b3e50",
+      "comment": "",
+      "command": "click",
+      "target": "css=form:nth-child(1)",
+      "targets": [
+        ["css=form:nth-child(1)", "css:finder"],
+        ["xpath=//form[@action='registration-servlet']", "xpath:attributes"],
+        ["xpath=//div[2]/form", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7a871beb-3bbe-4724-b367-feea227748fb",
+      "comment": "",
+      "command": "click",
+      "target": "id=naz",
+      "targets": [
+        ["id=naz", "id"],
+        ["name=nazionalita", "name"],
+        ["css=#naz", "css:finder"],
+        ["xpath=//select[@id='naz']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "668e148c-dc41-4c07-ba34-feed0277b5c1",
+      "comment": "",
+      "command": "select",
+      "target": "id=naz",
+      "targets": [],
+      "value": "label=Angola"
+    }, {
+      "id": "174041b4-ad53-4aae-a782-5f65498caa02",
+      "comment": "",
+      "command": "click",
+      "target": "id=naz",
+      "targets": [
+        ["id=naz", "id"],
+        ["name=nazionalita", "name"],
+        ["css=#naz", "css:finder"],
+        ["xpath=//select[@id='naz']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2fff92da-8c14-4d03-8a89-7bf6431929a3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.val:nth-child(8)",
+      "targets": [
+        ["css=.val:nth-child(8)", "css:finder"],
+        ["xpath=//input[@value='Register']", "xpath:attributes"],
+        ["xpath=//input[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "729023d9-f066-4efa-a2ad-28f300c3c7f8",
+      "comment": "Registrazione Fallita: formato cognome non corretto",
+      "command": "assertText",
+      "target": "xpath=//h1[contains(.,'An Exception has occurred. Please be careful')]",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//body/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'An Exception has occurred. Please be careful')]", "xpath:innerText"]
+      ],
+      "value": "An Exception has occurred. Please be careful"
+    }]
+  }, {
+    "id": "2e2138b1-446e-4b42-8a26-52476c618e6b",
+    "name": "TC_REG11",
+    "commands": [{
+      "id": "dd266b6f-5561-4f9e-9812-866432f0f284",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/ArtGalleryIS_war_exploded/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ea31c63e-4719-4bad-944f-cce0b792e690",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x835",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ae3cdcab-c96f-4ef7-90b8-e657b0c15293",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Registrazione",
+      "targets": [
+        ["linkText=Registrazione", "linkText"],
+        ["css=.email", "css:finder"],
+        ["xpath=//a[contains(text(),'Registrazione')]", "xpath:link"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'login-servlet')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Registrazione')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ac3c4f91-188e-44b8-aa23-dcd03f933c9e",
+      "comment": "",
+      "command": "click",
+      "target": "id=usernameRegistration",
+      "targets": [
+        ["id=usernameRegistration", "id"],
+        ["css=#usernameRegistration", "css:finder"],
+        ["xpath=//input[@id='usernameRegistration']", "xpath:attributes"],
+        ["xpath=//div[2]/form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3d7729c0-02bc-45ab-ac36-8b66b09d44de",
+      "comment": "",
+      "command": "type",
+      "target": "id=usernameRegistration",
+      "targets": [
+        ["id=usernameRegistration", "id"],
+        ["css=#usernameRegistration", "css:finder"],
+        ["xpath=//input[@id='usernameRegistration']", "xpath:attributes"],
+        ["xpath=//div[2]/form/input", "xpath:position"]
+      ],
+      "value": "user1 "
+    }, {
+      "id": "5197b245-6254-4ea1-a327-6cfbdc5b43e0",
+      "comment": "",
+      "command": "type",
+      "target": "id=passwordRegistration",
+      "targets": [
+        ["id=passwordRegistration", "id"],
+        ["css=#passwordRegistration", "css:finder"],
+        ["xpath=//input[@id='passwordRegistration']", "xpath:attributes"],
+        ["xpath=//form/input[2]", "xpath:position"]
+      ],
+      "value": "passwordpassword"
+    }, {
+      "id": "4a798af1-2aa1-4399-ac72-55c1cdecbe12",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form/input[3]", "xpath:position"]
+      ],
+      "value": "fed@gmc.afaf"
+    }, {
+      "id": "7406205f-9cf1-4b54-adb9-061e25c4f087",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": "Fedele"
+    }, {
+      "id": "581e850d-9781-462d-b423-d23f2c15775c",
+      "comment": "",
+      "command": "type",
+      "target": "id=cognome",
+      "targets": [
+        ["id=cognome", "id"],
+        ["name=cognome", "name"],
+        ["css=#cognome", "css:finder"],
+        ["xpath=//input[@id='cognome']", "xpath:attributes"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": "Mauro"
+    }, {
+      "id": "74be47e2-4924-4b4a-a253-e675dcf9f391",
+      "comment": "",
+      "command": "click",
+      "target": "css=form:nth-child(1)",
+      "targets": [
+        ["css=form:nth-child(1)", "css:finder"],
+        ["xpath=//form[@action='registration-servlet']", "xpath:attributes"],
+        ["xpath=//div[2]/form", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "73b039bf-51e3-4b32-8f07-12a16e8b8568",
+      "comment": "",
+      "command": "click",
+      "target": "css=.val:nth-child(8)",
+      "targets": [
+        ["css=.val:nth-child(8)", "css:finder"],
+        ["xpath=//input[@value='Register']", "xpath:attributes"],
+        ["xpath=//input[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "36ba48f2-f55d-4ff4-ab8d-768137b6cad6",
+      "comment": "Registrazione Fallita: username contiene un carattere di spazio",
+      "command": "assertText",
+      "target": "xpath=//h1[contains(.,'An Exception has occurred. Please be careful')]",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//body/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'An Exception has occurred. Please be careful')]", "xpath:innerText"]
+      ],
+      "value": "An Exception has occurred. Please be careful"
+    }]
+  }, {
+    "id": "55448303-feb6-4849-8dba-99a50a5f4587",
+    "name": "TC_REG12",
+    "commands": [{
+      "id": "aab42ec4-4b2b-4de0-9d07-8c8845b35726",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/ArtGalleryIS_war_exploded/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "66059281-1acc-4a58-9637-633bd41ffeaf",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x835",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "34aa2f36-3849-4949-ba20-3edc238c495d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Registrazione",
+      "targets": [
+        ["linkText=Registrazione", "linkText"],
+        ["css=.email", "css:finder"],
+        ["xpath=//a[contains(text(),'Registrazione')]", "xpath:link"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'login-servlet')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Registrazione')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "208edbf4-64cc-46b7-8fc5-796a4d2ca87e",
+      "comment": "",
+      "command": "click",
+      "target": "id=usernameRegistration",
+      "targets": [
+        ["id=usernameRegistration", "id"],
+        ["css=#usernameRegistration", "css:finder"],
+        ["xpath=//input[@id='usernameRegistration']", "xpath:attributes"],
+        ["xpath=//div[2]/form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f53c7367-78e0-46aa-83d2-90d06950950f",
+      "comment": "",
+      "command": "type",
+      "target": "id=usernameRegistration",
+      "targets": [
+        ["id=usernameRegistration", "id"],
+        ["css=#usernameRegistration", "css:finder"],
+        ["xpath=//input[@id='usernameRegistration']", "xpath:attributes"],
+        ["xpath=//div[2]/form/input", "xpath:position"]
+      ],
+      "value": "user2"
+    }, {
+      "id": "93df522a-a78f-4afc-bbd8-e544f2bc5e56",
+      "comment": "",
+      "command": "type",
+      "target": "id=passwordRegistration",
+      "targets": [
+        ["id=passwordRegistration", "id"],
+        ["css=#passwordRegistration", "css:finder"],
+        ["xpath=//input[@id='passwordRegistration']", "xpath:attributes"],
+        ["xpath=//form/input[2]", "xpath:position"]
+      ],
+      "value": "password12 "
+    }, {
+      "id": "ec997928-5411-4c7f-8bf9-c7cc738202c0",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form/input[3]", "xpath:position"]
+      ],
+      "value": "fed@gmc.afaf"
+    }, {
+      "id": "abd151cf-b8f4-4e76-a430-3bb523b6b00b",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": "Fedele"
+    }, {
+      "id": "4140627d-0098-4d15-8066-3b3640c90e4b",
+      "comment": "",
+      "command": "type",
+      "target": "id=cognome",
+      "targets": [
+        ["id=cognome", "id"],
+        ["name=cognome", "name"],
+        ["css=#cognome", "css:finder"],
+        ["xpath=//input[@id='cognome']", "xpath:attributes"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": "Mauro"
+    }, {
+      "id": "87c900db-b287-473e-8666-e072c5ba67dd",
+      "comment": "",
+      "command": "click",
+      "target": "css=form:nth-child(1)",
+      "targets": [
+        ["css=form:nth-child(1)", "css:finder"],
+        ["xpath=//form[@action='registration-servlet']", "xpath:attributes"],
+        ["xpath=//div[2]/form", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8ef275b0-7e5c-4d75-a07e-c1262d97e78a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.val:nth-child(8)",
+      "targets": [
+        ["css=.val:nth-child(8)", "css:finder"],
+        ["xpath=//input[@value='Register']", "xpath:attributes"],
+        ["xpath=//input[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9836cbbb-b6f7-4c17-bc70-f28ecaea122e",
+      "comment": "Registrazione Fallita: password contiene un carattere di spazio",
+      "command": "assertText",
+      "target": "xpath=//h1[contains(.,'An Exception has occurred. Please be careful')]",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//body/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'An Exception has occurred. Please be careful')]", "xpath:innerText"]
+      ],
+      "value": "An Exception has occurred. Please be careful"
+    }]
+  }, {
+    "id": "201b8666-6307-47c3-a504-f6aeade9979c",
+    "name": "TC_REG13",
+    "commands": [{
+      "id": "c05c82cf-ba99-4b2f-97e1-b4f8d450d34b",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/ArtGalleryIS_war_exploded/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "350373f1-ef76-401b-a7fa-648fb980e198",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x835",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "15e4c5f7-0a57-4c5a-9353-2a19c5a11587",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Registrazione",
+      "targets": [
+        ["linkText=Registrazione", "linkText"],
+        ["css=.email", "css:finder"],
+        ["xpath=//a[contains(text(),'Registrazione')]", "xpath:link"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'login-servlet')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Registrazione')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fb37c11f-7a21-497e-80be-ace14cf7bc2c",
+      "comment": "",
+      "command": "click",
+      "target": "id=usernameRegistration",
+      "targets": [
+        ["id=usernameRegistration", "id"],
+        ["css=#usernameRegistration", "css:finder"],
+        ["xpath=//input[@id='usernameRegistration']", "xpath:attributes"],
+        ["xpath=//div[2]/form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f00efa3b-e868-4187-8466-3caf87c86ced",
+      "comment": "",
+      "command": "type",
+      "target": "id=usernameRegistration",
+      "targets": [
+        ["id=usernameRegistration", "id"],
+        ["css=#usernameRegistration", "css:finder"],
+        ["xpath=//input[@id='usernameRegistration']", "xpath:attributes"],
+        ["xpath=//div[2]/form/input", "xpath:position"]
+      ],
+      "value": "fedeleprova"
+    }, {
+      "id": "9ad6e28d-d878-4b49-8790-520133900daf",
+      "comment": "",
+      "command": "type",
+      "target": "id=passwordRegistration",
+      "targets": [
+        ["id=passwordRegistration", "id"],
+        ["css=#passwordRegistration", "css:finder"],
+        ["xpath=//input[@id='passwordRegistration']", "xpath:attributes"],
+        ["xpath=//form/input[2]", "xpath:position"]
+      ],
+      "value": "fedeleprova"
+    }, {
+      "id": "4f9f3687-173d-40e4-8fcc-898ffc0aa4db",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form/input[3]", "xpath:position"]
+      ],
+      "value": "fedele@prova.com"
+    }, {
+      "id": "220e97bc-1137-4d8b-95f0-56b39da6c86d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.val:nth-child(8)",
+      "targets": [
+        ["css=.val:nth-child(8)", "css:finder"],
+        ["xpath=//input[@value='Register']", "xpath:attributes"],
+        ["xpath=//input[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3215a38f-69ea-458f-9f99-966eccc88429",
+      "comment": "Registrazione Fallita: nome e cognome vuoti",
+      "command": "assertText",
+      "target": "xpath=//h1[contains(.,'An Exception has occurred. Please be careful')]",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//body/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'An Exception has occurred. Please be careful')]", "xpath:innerText"]
+      ],
+      "value": "An Exception has occurred. Please be careful"
+    }]
+  }],
+  "suites": [{
+    "id": "abcf588d-ba25-4b71-aabe-a05452b44eb5",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["fe4eaad4-ef97-4a40-89ee-1cec1be28141"]
+  }],
+  "urls": ["http://localhost:8080/ArtGalleryIS_war_exploded/"],
+  "plugins": []
+}

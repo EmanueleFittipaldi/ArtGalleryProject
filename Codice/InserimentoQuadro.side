@@ -1,0 +1,2176 @@
+{
+  "id": "fc6d9a36-a4f1-494e-a565-f559287445f9",
+  "version": "2.0",
+  "name": "InserimentoQuadro",
+  "url": "http://localhost:8080/ArtGalleryIS_war_exploded/",
+  "tests": [{
+    "id": "3e45296b-57cd-43dd-81a9-588f5c94384c",
+    "name": "TC_IQ1",
+    "commands": [{
+      "id": "79039a99-b143-4de9-b682-22fb23120e2d",
+      "comment": "",
+      "command": "open",
+      "target": "/ArtGalleryIS_war_exploded/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bb2e88d0-90c3-4bec-93d8-3a8863442283",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x835",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c92b3774-6d57-4014-9ca6-c1883d5d93b6",
+      "comment": "",
+      "command": "click",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d92dba98-21e6-4c05-8765-51d18ed5361b",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "admin2"
+    }, {
+      "id": "bfeff366-4096-4f79-8f27-45a56dc260fc",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "fedele123"
+    }, {
+      "id": "6ee00a06-3868-4f20-a7d2-d4defa322bbe",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "85d89adb-a3e9-45d6-a0ba-4964b5e6bed4",
+      "comment": "",
+      "command": "click",
+      "target": "css=form:nth-child(5) > button",
+      "targets": [
+        ["css=form:nth-child(5) > button", "css:finder"],
+        ["xpath=//div[@id='navbar']/form[3]/button", "xpath:idRelative"],
+        ["xpath=//form[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'admin2')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a5130605-0d6f-4494-9016-c9824d2bffc2",
+      "comment": "",
+      "command": "click",
+      "target": "name=titolo",
+      "targets": [
+        ["name=titolo", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='titolo']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input", "xpath:idRelative"],
+        ["xpath=//div[3]/form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fcc3dd2d-836c-415c-83fb-9e5fec2ed005",
+      "comment": "",
+      "command": "type",
+      "target": "name=titolo",
+      "targets": [
+        ["name=titolo", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='titolo']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input", "xpath:idRelative"],
+        ["xpath=//div[3]/form/input", "xpath:position"]
+      ],
+      "value": "La Gioconda"
+    }, {
+      "id": "f2f5f847-e61a-48e7-aca5-86a38542da5b",
+      "comment": "",
+      "command": "click",
+      "target": "name=artista",
+      "targets": [
+        ["name=artista", "name"],
+        ["css=form:nth-child(1) > input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='artista']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0055f84c-b6bb-4c27-8860-651b56541399",
+      "comment": "",
+      "command": "type",
+      "target": "name=artista",
+      "targets": [
+        ["name=artista", "name"],
+        ["css=form:nth-child(1) > input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='artista']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "Leonardo Da Vinci"
+    }, {
+      "id": "289ac919-4a5a-4cdf-8865-163174cd7180",
+      "comment": "",
+      "command": "click",
+      "target": "name=anno",
+      "targets": [
+        ["name=anno", "name"],
+        ["css=input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='anno']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "23ea333a-ffef-42a7-af82-28d8337b337c",
+      "comment": "",
+      "command": "type",
+      "target": "name=anno",
+      "targets": [
+        ["name=anno", "name"],
+        ["css=input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='anno']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "1500"
+    }, {
+      "id": "9e7f1c1c-8de0-4893-8fc3-ead4c588b671",
+      "comment": "",
+      "command": "click",
+      "target": "name=genere",
+      "targets": [
+        ["name=genere", "name"],
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='genere']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[4]", "xpath:idRelative"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b7999e7b-68b8-497d-bac2-1be908e86f5b",
+      "comment": "",
+      "command": "type",
+      "target": "name=genere",
+      "targets": [
+        ["name=genere", "name"],
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='genere']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[4]", "xpath:idRelative"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": "Ritratto"
+    }, {
+      "id": "2c790aa6-959b-4b4a-802e-98d3c9718fd7",
+      "comment": "",
+      "command": "click",
+      "target": "name=tecnica",
+      "targets": [
+        ["name=tecnica", "name"],
+        ["css=input:nth-child(5)", "css:finder"],
+        ["xpath=//input[@name='tecnica']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[5]", "xpath:idRelative"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f19e0e15-6376-4bbe-aedd-8caa7e8c2c10",
+      "comment": "",
+      "command": "type",
+      "target": "name=tecnica",
+      "targets": [
+        ["name=tecnica", "name"],
+        ["css=input:nth-child(5)", "css:finder"],
+        ["xpath=//input[@name='tecnica']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[5]", "xpath:idRelative"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": "Olio su tela"
+    }, {
+      "id": "ccecfbc7-325a-4643-ba60-29ddf40c2817",
+      "comment": "",
+      "command": "click",
+      "target": "name=dimensione",
+      "targets": [
+        ["name=dimensione", "name"],
+        ["css=input:nth-child(6)", "css:finder"],
+        ["xpath=//input[@name='dimensione']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[6]", "xpath:idRelative"],
+        ["xpath=//input[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1abfa8eb-9313-483a-b82d-f64eaf77fbbd",
+      "comment": "",
+      "command": "type",
+      "target": "name=dimensione",
+      "targets": [
+        ["name=dimensione", "name"],
+        ["css=input:nth-child(6)", "css:finder"],
+        ["xpath=//input[@name='dimensione']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[6]", "xpath:idRelative"],
+        ["xpath=//input[6]", "xpath:position"]
+      ],
+      "value": "25*50"
+    }, {
+      "id": "d49ab998-39a5-432c-a7e2-4461e1861fa6",
+      "comment": "",
+      "command": "click",
+      "target": "name=prezzo",
+      "targets": [
+        ["name=prezzo", "name"],
+        ["css=input:nth-child(7)", "css:finder"],
+        ["xpath=//input[@name='prezzo']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[7]", "xpath:idRelative"],
+        ["xpath=//input[7]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b414a8c1-dae9-498d-9562-5f047b4c55a3",
+      "comment": "",
+      "command": "type",
+      "target": "name=prezzo",
+      "targets": [
+        ["name=prezzo", "name"],
+        ["css=input:nth-child(7)", "css:finder"],
+        ["xpath=//input[@name='prezzo']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[7]", "xpath:idRelative"],
+        ["xpath=//input[7]", "xpath:position"]
+      ],
+      "value": "150000"
+    }, {
+      "id": "71d578e4-6a46-4307-ac24-fecd7d8cc639",
+      "comment": "",
+      "command": "click",
+      "target": "name=file",
+      "targets": [
+        ["name=file", "name"],
+        ["css=input:nth-child(8)", "css:finder"],
+        ["xpath=//input[@name='file']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[8]", "xpath:idRelative"],
+        ["xpath=//input[8]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f71a9409-8f1c-4c67-87ec-7616cff9cb6c",
+      "comment": "",
+      "command": "type",
+      "target": "name=file",
+      "targets": [
+        ["name=file", "name"],
+        ["css=input:nth-child(8)", "css:finder"],
+        ["xpath=//input[@name='file']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[8]", "xpath:idRelative"],
+        ["xpath=//input[8]", "xpath:position"]
+      ],
+      "value": "C:\\fakepath\\13.jpg"
+    }, {
+      "id": "02dd713c-0291-4a00-b4d2-7feb4f0e53ab",
+      "comment": "",
+      "command": "click",
+      "target": "id=submitInserisci",
+      "targets": [
+        ["id=submitInserisci", "id"],
+        ["css=#submitInserisci", "css:finder"],
+        ["xpath=//input[@id='submitInserisci']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[9]", "xpath:idRelative"],
+        ["xpath=//input[9]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "49423950-a114-440a-8dea-3f8f0a8d0f47",
+    "name": "TC_IQ2",
+    "commands": [{
+      "id": "6e007390-0d20-4b18-8543-b4b396336fdc",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/ArtGalleryIS_war_exploded/handler?form=logout",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "db4cac25-0039-4811-abb6-4220ec55e509",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1051x815",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d3963db7-2a65-4182-9a30-a9f0c31d971e",
+      "comment": "",
+      "command": "click",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "82b8d5f8-51e8-4e4a-b05d-0eea4f4a4558",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "admin2"
+    }, {
+      "id": "c8ab90f8-1c84-49a5-bb13-8bca3e4f6892",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "fedele123"
+    }, {
+      "id": "372d9b3f-eb43-4a79-ba95-5865fc996841",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "8d64aa2f-ef87-40b9-9fc6-5adc2c9b1aff",
+      "comment": "",
+      "command": "click",
+      "target": "css=form:nth-child(5) > button",
+      "targets": [
+        ["css=form:nth-child(5) > button", "css:finder"],
+        ["xpath=//div[@id='navbar']/form[3]/button", "xpath:idRelative"],
+        ["xpath=//form[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'admin2')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9ac3ed83-2e46-4b9f-81bb-4f259b139b7d",
+      "comment": "",
+      "command": "click",
+      "target": "name=titolo",
+      "targets": [
+        ["name=titolo", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='titolo']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input", "xpath:idRelative"],
+        ["xpath=//div[3]/form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b2d3f0bb-03bc-451d-a0ae-0804ab45f527",
+      "comment": "",
+      "command": "type",
+      "target": "name=titolo",
+      "targets": [
+        ["name=titolo", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='titolo']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input", "xpath:idRelative"],
+        ["xpath=//div[3]/form/input", "xpath:position"]
+      ],
+      "value": "123"
+    }, {
+      "id": "75203ac5-80f7-4292-91ad-02ce09685d2e",
+      "comment": "",
+      "command": "click",
+      "target": "id=submitInserisci",
+      "targets": [
+        ["id=submitInserisci", "id"],
+        ["css=#submitInserisci", "css:finder"],
+        ["xpath=//input[@id='submitInserisci']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[9]", "xpath:idRelative"],
+        ["xpath=//input[9]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8ed0abd9-5b24-43b3-874b-0493ca040cb1",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//h1[contains(.,'An Exception has occurred. Please be careful')]",
+      "targets": [
+        ["css=h1:nth-child(5)", "css:finder"],
+        ["xpath=//body/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'An Exception has occurred. Please be careful')]", "xpath:innerText"]
+      ],
+      "value": "An Exception has occurred. Please be careful"
+    }]
+  }, {
+    "id": "e51ae023-556c-4171-84ab-9c0f919a58b5",
+    "name": "TC_IQ3",
+    "commands": [{
+      "id": "c29059b9-3023-4d22-8bb9-86b6690d26e9",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/ArtGalleryIS_war_exploded/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f0b28532-e98d-4c92-aced-202e75446e6b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1051x815",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7e26a330-3993-4b9a-b47d-4f83f9c482a5",
+      "comment": "",
+      "command": "click",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "80e8adb1-19ba-43a8-8084-78d95a6e69ff",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "admin2"
+    }, {
+      "id": "b49b4d2a-2a48-40fd-8769-8b9a80775bdd",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "fedele123"
+    }, {
+      "id": "911c4088-a1d0-474c-bdc9-dc0141faebe2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.log",
+      "targets": [
+        ["css=.log", "css:finder"],
+        ["xpath=//input[@value='Login']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7ea89206-2f56-473c-a059-c8e2509ec6c8",
+      "comment": "",
+      "command": "click",
+      "target": "css=form:nth-child(5) > button",
+      "targets": [
+        ["css=form:nth-child(5) > button", "css:finder"],
+        ["xpath=//div[@id='navbar']/form[3]/button", "xpath:idRelative"],
+        ["xpath=//form[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'admin2')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "11dc8c5d-da7f-4197-bb37-72f3cbe55ae6",
+      "comment": "",
+      "command": "click",
+      "target": "name=titolo",
+      "targets": [
+        ["name=titolo", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='titolo']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input", "xpath:idRelative"],
+        ["xpath=//div[3]/form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "edc7e977-d135-4a21-b13b-8858fef6d324",
+      "comment": "",
+      "command": "type",
+      "target": "name=titolo",
+      "targets": [
+        ["name=titolo", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='titolo']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input", "xpath:idRelative"],
+        ["xpath=//div[3]/form/input", "xpath:position"]
+      ],
+      "value": "La Gioconda"
+    }, {
+      "id": "3f26cad4-470b-4e96-818c-6f1feeb3b603",
+      "comment": "",
+      "command": "click",
+      "target": "name=artista",
+      "targets": [
+        ["name=artista", "name"],
+        ["css=form:nth-child(1) > input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='artista']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "35d8f2ad-7f86-4f98-9762-400af87ed39c",
+      "comment": "",
+      "command": "type",
+      "target": "name=artista",
+      "targets": [
+        ["name=artista", "name"],
+        ["css=form:nth-child(1) > input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='artista']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "123"
+    }, {
+      "id": "fa013c8b-a5bd-40da-9a58-a6939c99b637",
+      "comment": "",
+      "command": "click",
+      "target": "id=submitInserisci",
+      "targets": [
+        ["id=submitInserisci", "id"],
+        ["css=#submitInserisci", "css:finder"],
+        ["xpath=//input[@id='submitInserisci']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[9]", "xpath:idRelative"],
+        ["xpath=//input[9]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "efba7064-439f-4a92-8353-ee796dfafef4",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//h1[contains(.,'An Exception has occurred. Please be careful')]",
+      "targets": [
+        ["css=h1:nth-child(5)", "css:finder"],
+        ["xpath=//body/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'An Exception has occurred. Please be careful')]", "xpath:innerText"]
+      ],
+      "value": "An Exception has occurred. Please be careful"
+    }]
+  }, {
+    "id": "7799a747-eb51-4efb-9aef-9eb29ca1cbab",
+    "name": "TC_IQ4",
+    "commands": [{
+      "id": "fbc49915-b84e-446b-818f-a4d6cc0148a8",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/ArtGalleryIS_war_exploded/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d6fd7fbb-55d3-4a22-8af2-5b27de0aba9f",
+      "comment": "",
+      "command": "click",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2fbbb728-e7e3-44a4-b341-69c187c0e553",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "admin2"
+    }, {
+      "id": "9f8cdcca-d1bd-4fb7-9b62-aa5cc7c391b6",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "fedele123"
+    }, {
+      "id": "cb7fe723-c361-4a93-a8dc-776c151bf0e8",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "2cd75641-62e3-4ddd-99f4-d25abe5812b1",
+      "comment": "",
+      "command": "click",
+      "target": "css=form:nth-child(5) > button",
+      "targets": [
+        ["css=form:nth-child(5) > button", "css:finder"],
+        ["xpath=//div[@id='navbar']/form[3]/button", "xpath:idRelative"],
+        ["xpath=//form[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'admin2')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f64bb758-5f9d-495f-9fb2-948ccfcdfde3",
+      "comment": "",
+      "command": "click",
+      "target": "name=titolo",
+      "targets": [
+        ["name=titolo", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='titolo']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input", "xpath:idRelative"],
+        ["xpath=//div[3]/form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ef23fe8-ea8b-479f-b186-36a5f9a9e89b",
+      "comment": "",
+      "command": "type",
+      "target": "name=titolo",
+      "targets": [
+        ["name=titolo", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='titolo']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input", "xpath:idRelative"],
+        ["xpath=//div[3]/form/input", "xpath:position"]
+      ],
+      "value": "La Gioconda"
+    }, {
+      "id": "74dee5d3-e55d-4766-8e83-884196a97324",
+      "comment": "",
+      "command": "click",
+      "target": "name=artista",
+      "targets": [
+        ["name=artista", "name"],
+        ["css=form:nth-child(1) > input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='artista']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "160c8856-b06c-4bbf-b64f-ce138d82b784",
+      "comment": "",
+      "command": "type",
+      "target": "name=artista",
+      "targets": [
+        ["name=artista", "name"],
+        ["css=form:nth-child(1) > input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='artista']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "Leonardo Da Vinci"
+    }, {
+      "id": "914faeca-ca2a-4b6b-88e1-ba47469b79ce",
+      "comment": "",
+      "command": "click",
+      "target": "name=anno",
+      "targets": [
+        ["name=anno", "name"],
+        ["css=input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='anno']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "58b3308a-9ff4-4e81-bd5d-82c4bd6364a7",
+      "comment": "",
+      "command": "type",
+      "target": "name=anno",
+      "targets": [
+        ["name=anno", "name"],
+        ["css=input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='anno']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "aer"
+    }, {
+      "id": "0ea0fb6c-ec2f-44d5-a1ce-39113372f56d",
+      "comment": "",
+      "command": "click",
+      "target": "id=submitInserisci",
+      "targets": [
+        ["id=submitInserisci", "id"],
+        ["css=#submitInserisci", "css:finder"],
+        ["xpath=//input[@id='submitInserisci']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[9]", "xpath:idRelative"],
+        ["xpath=//input[9]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bdc44105-738b-4ab6-8894-7d4c86e90740",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//h1[contains(.,'An Exception has occurred. Please be careful')]",
+      "targets": [
+        ["css=h1:nth-child(5)", "css:finder"],
+        ["xpath=//body/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'An Exception has occurred. Please be careful')]", "xpath:innerText"]
+      ],
+      "value": "An Exception has occurred. Please be careful"
+    }]
+  }, {
+    "id": "4021483d-a8ad-41b7-a9bc-b52c8cb9aee1",
+    "name": "TC_IQ5",
+    "commands": [{
+      "id": "b01b6585-f1f9-4d60-8faf-fb4bdf87ca78",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/ArtGalleryIS_war_exploded/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "30f5f7d1-78bb-4b90-b31b-4595a723e033",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1051x815",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "29e9f100-ca3a-452d-bdfa-6a5a5711a5d3",
+      "comment": "",
+      "command": "click",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2a990d99-56b2-4543-9d80-628a18fa82aa",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "admin2"
+    }, {
+      "id": "8f9c175d-2604-4ef9-a9cc-69a6e530358f",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "fedele123"
+    }, {
+      "id": "21a75c4b-76a4-4286-82d7-f430325ce764",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "7f5c30e2-b542-45d2-9a44-c4b139688eb3",
+      "comment": "",
+      "command": "click",
+      "target": "css=form:nth-child(5) > button",
+      "targets": [
+        ["css=form:nth-child(5) > button", "css:finder"],
+        ["xpath=//div[@id='navbar']/form[3]/button", "xpath:idRelative"],
+        ["xpath=//form[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'admin2')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "85e6bedb-e768-40dc-8f93-1b6af905f551",
+      "comment": "",
+      "command": "click",
+      "target": "name=titolo",
+      "targets": [
+        ["name=titolo", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='titolo']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input", "xpath:idRelative"],
+        ["xpath=//div[3]/form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f2a7f1a0-69ae-4138-b47f-4207be16dc95",
+      "comment": "",
+      "command": "type",
+      "target": "name=titolo",
+      "targets": [
+        ["name=titolo", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='titolo']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input", "xpath:idRelative"],
+        ["xpath=//div[3]/form/input", "xpath:position"]
+      ],
+      "value": "La Gioconda"
+    }, {
+      "id": "b5c08266-e7aa-4a8d-b582-6b30b4909cca",
+      "comment": "",
+      "command": "click",
+      "target": "name=artista",
+      "targets": [
+        ["name=artista", "name"],
+        ["css=form:nth-child(1) > input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='artista']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f0577397-06fe-4813-aebf-9b72e3e22942",
+      "comment": "",
+      "command": "type",
+      "target": "name=artista",
+      "targets": [
+        ["name=artista", "name"],
+        ["css=form:nth-child(1) > input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='artista']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "Leonardo Da Vinci"
+    }, {
+      "id": "7fd2fa6c-1fb2-41a3-b52e-8f02bfd20f8f",
+      "comment": "",
+      "command": "click",
+      "target": "name=anno",
+      "targets": [
+        ["name=anno", "name"],
+        ["css=input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='anno']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b8cbde2f-0b63-4295-9c0b-a0c08a80713c",
+      "comment": "",
+      "command": "type",
+      "target": "name=anno",
+      "targets": [
+        ["name=anno", "name"],
+        ["css=input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='anno']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "1500"
+    }, {
+      "id": "1b2e66d8-ea6c-4fb8-97c4-c7dc7107888c",
+      "comment": "",
+      "command": "click",
+      "target": "name=genere",
+      "targets": [
+        ["name=genere", "name"],
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='genere']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[4]", "xpath:idRelative"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3b5f24bd-fa3e-4ecb-8934-5f7abc3ab3c1",
+      "comment": "",
+      "command": "type",
+      "target": "name=genere",
+      "targets": [
+        ["name=genere", "name"],
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='genere']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[4]", "xpath:idRelative"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": "123"
+    }, {
+      "id": "c11558ee-49f2-444f-9b2d-f2b9c33b85cb",
+      "comment": "",
+      "command": "click",
+      "target": "id=submitInserisci",
+      "targets": [
+        ["id=submitInserisci", "id"],
+        ["css=#submitInserisci", "css:finder"],
+        ["xpath=//input[@id='submitInserisci']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[9]", "xpath:idRelative"],
+        ["xpath=//input[9]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d1d6a4df-632f-4fe6-b044-6c76a65b80f7",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//h1[contains(.,'An Exception has occurred. Please be careful')]",
+      "targets": [
+        ["css=h1:nth-child(5)", "css:finder"],
+        ["xpath=//body/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'An Exception has occurred. Please be careful')]", "xpath:innerText"]
+      ],
+      "value": "An Exception has occurred. Please be careful"
+    }]
+  }, {
+    "id": "0a0c9fd9-463a-4ecf-9aa6-83f159e9f2fd",
+    "name": "TC_IQ6",
+    "commands": [{
+      "id": "21b35555-9fc1-408f-84f3-570fd73e1f2c",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/ArtGalleryIS_war_exploded/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6da6b7ec-913f-4555-9858-6c181a5a4fd1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1051x815",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6ff831d1-da9d-46c8-b2a3-a6691efc2c6a",
+      "comment": "",
+      "command": "click",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6e2f4e19-a365-49cb-aadd-7ffdaa307cb9",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "admin2"
+    }, {
+      "id": "a222bcc3-9cab-4b24-adda-09370ce4c90f",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "fedele123"
+    }, {
+      "id": "a8e58efb-bf9b-4b5d-8bfa-2b1523e8f662",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "5d09bfc5-54ab-4ad0-a00f-ab9099962f52",
+      "comment": "",
+      "command": "click",
+      "target": "css=form:nth-child(5) > button",
+      "targets": [
+        ["css=form:nth-child(5) > button", "css:finder"],
+        ["xpath=//div[@id='navbar']/form[3]/button", "xpath:idRelative"],
+        ["xpath=//form[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'admin2')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ad4bcca9-691e-444a-8d4e-3f50c00b4fce",
+      "comment": "",
+      "command": "click",
+      "target": "name=titolo",
+      "targets": [
+        ["name=titolo", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='titolo']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input", "xpath:idRelative"],
+        ["xpath=//div[3]/form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c7b4a860-10d3-40ed-9c14-fec3ccf23d41",
+      "comment": "",
+      "command": "type",
+      "target": "name=titolo",
+      "targets": [
+        ["name=titolo", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='titolo']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input", "xpath:idRelative"],
+        ["xpath=//div[3]/form/input", "xpath:position"]
+      ],
+      "value": "La Gioconda"
+    }, {
+      "id": "3d7e4e7b-2c07-4c2e-ad77-81ae519251ef",
+      "comment": "",
+      "command": "click",
+      "target": "name=artista",
+      "targets": [
+        ["name=artista", "name"],
+        ["css=form:nth-child(1) > input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='artista']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "00129b33-0406-4639-9463-65e362fa3245",
+      "comment": "",
+      "command": "type",
+      "target": "name=artista",
+      "targets": [
+        ["name=artista", "name"],
+        ["css=form:nth-child(1) > input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='artista']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "Leonardo Da Vinci"
+    }, {
+      "id": "94f22c91-be01-4c84-b988-8e09f868ea90",
+      "comment": "",
+      "command": "click",
+      "target": "name=anno",
+      "targets": [
+        ["name=anno", "name"],
+        ["css=input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='anno']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "75c26e09-e56f-462c-9115-d8698d5d9132",
+      "comment": "",
+      "command": "type",
+      "target": "name=anno",
+      "targets": [
+        ["name=anno", "name"],
+        ["css=input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='anno']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "1500"
+    }, {
+      "id": "dcf2c15a-09a7-4425-a324-618035acb502",
+      "comment": "",
+      "command": "click",
+      "target": "name=genere",
+      "targets": [
+        ["name=genere", "name"],
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='genere']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[4]", "xpath:idRelative"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "78306174-a9fa-41bf-b0fb-b34e6d5d1949",
+      "comment": "",
+      "command": "type",
+      "target": "name=genere",
+      "targets": [
+        ["name=genere", "name"],
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='genere']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[4]", "xpath:idRelative"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": "Ritratto"
+    }, {
+      "id": "78496e2c-42eb-4031-af18-5965a5648ec8",
+      "comment": "",
+      "command": "click",
+      "target": "name=tecnica",
+      "targets": [
+        ["name=tecnica", "name"],
+        ["css=input:nth-child(5)", "css:finder"],
+        ["xpath=//input[@name='tecnica']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[5]", "xpath:idRelative"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b160c844-f652-46ca-950a-24b247e7a97b",
+      "comment": "",
+      "command": "type",
+      "target": "name=tecnica",
+      "targets": [
+        ["name=tecnica", "name"],
+        ["css=input:nth-child(5)", "css:finder"],
+        ["xpath=//input[@name='tecnica']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[5]", "xpath:idRelative"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": "123"
+    }, {
+      "id": "281ea536-6992-41a0-9607-9d98ffe5b64a",
+      "comment": "",
+      "command": "click",
+      "target": "id=submitInserisci",
+      "targets": [
+        ["id=submitInserisci", "id"],
+        ["css=#submitInserisci", "css:finder"],
+        ["xpath=//input[@id='submitInserisci']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[9]", "xpath:idRelative"],
+        ["xpath=//input[9]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "33a5987f-7725-411b-83d1-80c0b8c21bfa",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//h1[contains(.,'An Exception has occurred. Please be careful')]",
+      "targets": [
+        ["css=h1:nth-child(5)", "css:finder"],
+        ["xpath=//body/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'An Exception has occurred. Please be careful')]", "xpath:innerText"]
+      ],
+      "value": "An Exception has occurred. Please be careful"
+    }]
+  }, {
+    "id": "5d736ddc-4eb7-4142-bbb6-2edebb05dbaf",
+    "name": "TC_IQ7",
+    "commands": [{
+      "id": "f8319c87-bdc2-4b2c-b81f-4e6fcf097ab9",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/ArtGalleryIS_war_exploded/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dde22750-88cc-48d3-ba33-a8a025bb6fe2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1051x815",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "edb20155-b94d-458b-ae67-4501d0df6647",
+      "comment": "",
+      "command": "click",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "de8b242e-3bd4-4f4b-b508-0716c05ae617",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "admin2"
+    }, {
+      "id": "61dc8215-e275-4c59-8c8a-08a44827200c",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "fedele123"
+    }, {
+      "id": "172e40e5-a280-4500-891e-3135a564e23b",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "53cbc2fc-d213-463f-96eb-18e8458eca53",
+      "comment": "",
+      "command": "click",
+      "target": "css=form:nth-child(5) > button",
+      "targets": [
+        ["css=form:nth-child(5) > button", "css:finder"],
+        ["xpath=//div[@id='navbar']/form[3]/button", "xpath:idRelative"],
+        ["xpath=//form[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'admin2')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5168a163-c711-4a8e-bb58-1b5a0a8839e2",
+      "comment": "",
+      "command": "click",
+      "target": "name=titolo",
+      "targets": [
+        ["name=titolo", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='titolo']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input", "xpath:idRelative"],
+        ["xpath=//div[3]/form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d6a16a5e-0e17-4e0c-bbc7-a03e51f78287",
+      "comment": "",
+      "command": "type",
+      "target": "name=titolo",
+      "targets": [
+        ["name=titolo", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='titolo']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input", "xpath:idRelative"],
+        ["xpath=//div[3]/form/input", "xpath:position"]
+      ],
+      "value": "La Gioconda"
+    }, {
+      "id": "8c37a6c4-d25d-4566-821b-5e154f4eb605",
+      "comment": "",
+      "command": "click",
+      "target": "name=artista",
+      "targets": [
+        ["name=artista", "name"],
+        ["css=form:nth-child(1) > input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='artista']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "02f4175d-6810-4e82-9c4e-67afd91d5096",
+      "comment": "",
+      "command": "type",
+      "target": "name=artista",
+      "targets": [
+        ["name=artista", "name"],
+        ["css=form:nth-child(1) > input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='artista']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "Leonardo Da Vinci"
+    }, {
+      "id": "3158e329-7bbf-481a-8403-e544c72aa170",
+      "comment": "",
+      "command": "click",
+      "target": "name=anno",
+      "targets": [
+        ["name=anno", "name"],
+        ["css=input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='anno']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4a1cfbe3-309e-444f-8961-4f00d336f343",
+      "comment": "",
+      "command": "type",
+      "target": "name=anno",
+      "targets": [
+        ["name=anno", "name"],
+        ["css=input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='anno']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "1500"
+    }, {
+      "id": "9c2cefcd-ebf8-46da-a518-bd54555056fa",
+      "comment": "",
+      "command": "click",
+      "target": "name=genere",
+      "targets": [
+        ["name=genere", "name"],
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='genere']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[4]", "xpath:idRelative"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "44b7f3d2-1f18-4698-b23c-e0a0a30880f1",
+      "comment": "",
+      "command": "type",
+      "target": "name=genere",
+      "targets": [
+        ["name=genere", "name"],
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='genere']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[4]", "xpath:idRelative"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": "Ritratto"
+    }, {
+      "id": "b3bbe0a6-79c5-4c02-ba49-2037c3e8b42f",
+      "comment": "",
+      "command": "click",
+      "target": "name=tecnica",
+      "targets": [
+        ["name=tecnica", "name"],
+        ["css=input:nth-child(5)", "css:finder"],
+        ["xpath=//input[@name='tecnica']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[5]", "xpath:idRelative"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "818faf5f-358a-4678-a757-67446b4dbbad",
+      "comment": "",
+      "command": "type",
+      "target": "name=tecnica",
+      "targets": [
+        ["name=tecnica", "name"],
+        ["css=input:nth-child(5)", "css:finder"],
+        ["xpath=//input[@name='tecnica']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[5]", "xpath:idRelative"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": "Olio"
+    }, {
+      "id": "93833a7d-25ff-42dd-a1ef-3733e4106124",
+      "comment": "",
+      "command": "click",
+      "target": "name=dimensione",
+      "targets": [
+        ["name=dimensione", "name"],
+        ["css=input:nth-child(6)", "css:finder"],
+        ["xpath=//input[@name='dimensione']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[6]", "xpath:idRelative"],
+        ["xpath=//input[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b617e347-918c-4f5d-9480-39390cfd3b9b",
+      "comment": "",
+      "command": "type",
+      "target": "name=dimensione",
+      "targets": [
+        ["name=dimensione", "name"],
+        ["css=input:nth-child(6)", "css:finder"],
+        ["xpath=//input[@name='dimensione']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[6]", "xpath:idRelative"],
+        ["xpath=//input[6]", "xpath:position"]
+      ],
+      "value": "2550"
+    }, {
+      "id": "792de738-5f74-4bb3-89d2-9d1718d02b4e",
+      "comment": "",
+      "command": "click",
+      "target": "id=submitInserisci",
+      "targets": [
+        ["id=submitInserisci", "id"],
+        ["css=#submitInserisci", "css:finder"],
+        ["xpath=//input[@id='submitInserisci']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[9]", "xpath:idRelative"],
+        ["xpath=//input[9]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "deee3f6d-176d-42ec-972c-0efcdd2ea033",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//h1[contains(.,'An Exception has occurred. Please be careful')]",
+      "targets": [
+        ["css=h1:nth-child(5)", "css:finder"],
+        ["xpath=//body/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'An Exception has occurred. Please be careful')]", "xpath:innerText"]
+      ],
+      "value": "An Exception has occurred. Please be careful"
+    }]
+  }, {
+    "id": "07e6b307-c5e1-4551-b048-e087ccab676e",
+    "name": "TC_IQ8",
+    "commands": [{
+      "id": "8d1ee5c7-b536-4e83-a2b2-ae601faa3dde",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/ArtGalleryIS_war_exploded/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6f15e9a7-1350-4582-ade3-83bc65b378d2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1051x815",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5d477d43-1778-4cb4-94c8-e45267a50226",
+      "comment": "",
+      "command": "click",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1e9cbe6f-e559-46c4-8d74-ad197660b9df",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "admin2"
+    }, {
+      "id": "534c2653-9abd-48c1-84a2-896395590eb4",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "fedele123"
+    }, {
+      "id": "891bcf3a-43bf-4f1d-b4db-36417f294720",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "84f86687-1abe-477c-9f4e-e82d382f870a",
+      "comment": "",
+      "command": "click",
+      "target": "css=form:nth-child(5) > button",
+      "targets": [
+        ["css=form:nth-child(5) > button", "css:finder"],
+        ["xpath=//div[@id='navbar']/form[3]/button", "xpath:idRelative"],
+        ["xpath=//form[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'admin2')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7adad67c-d832-407a-b110-67b36acec6e8",
+      "comment": "",
+      "command": "click",
+      "target": "name=titolo",
+      "targets": [
+        ["name=titolo", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='titolo']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input", "xpath:idRelative"],
+        ["xpath=//div[3]/form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "04c8c2a1-98bd-45d0-8e67-7f856ae5fd3d",
+      "comment": "",
+      "command": "type",
+      "target": "name=titolo",
+      "targets": [
+        ["name=titolo", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='titolo']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input", "xpath:idRelative"],
+        ["xpath=//div[3]/form/input", "xpath:position"]
+      ],
+      "value": "La Gioconda"
+    }, {
+      "id": "29cf9c5f-e956-4ffa-9e67-071f5188fe83",
+      "comment": "",
+      "command": "click",
+      "target": "name=artista",
+      "targets": [
+        ["name=artista", "name"],
+        ["css=form:nth-child(1) > input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='artista']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b9c80975-cda8-45be-98bc-cdd595affbfb",
+      "comment": "",
+      "command": "type",
+      "target": "name=artista",
+      "targets": [
+        ["name=artista", "name"],
+        ["css=form:nth-child(1) > input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='artista']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "Leonardo Da Vinci"
+    }, {
+      "id": "1f55e560-6b36-4085-97a0-25ac9775c5c3",
+      "comment": "",
+      "command": "click",
+      "target": "name=anno",
+      "targets": [
+        ["name=anno", "name"],
+        ["css=input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='anno']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "820d4dea-db34-4d9f-9bb8-d575d4052d22",
+      "comment": "",
+      "command": "type",
+      "target": "name=anno",
+      "targets": [
+        ["name=anno", "name"],
+        ["css=input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='anno']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "1500"
+    }, {
+      "id": "5bdcdfd2-1bee-477d-b3ba-9b4367ba24b8",
+      "comment": "",
+      "command": "click",
+      "target": "name=genere",
+      "targets": [
+        ["name=genere", "name"],
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='genere']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[4]", "xpath:idRelative"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "88128f1c-de29-4dfa-8816-f659ef049e22",
+      "comment": "",
+      "command": "type",
+      "target": "name=genere",
+      "targets": [
+        ["name=genere", "name"],
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='genere']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[4]", "xpath:idRelative"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": "Ritratto"
+    }, {
+      "id": "4c0f10b0-d64b-4cc4-b644-8ebb83fc49a2",
+      "comment": "",
+      "command": "click",
+      "target": "name=tecnica",
+      "targets": [
+        ["name=tecnica", "name"],
+        ["css=input:nth-child(5)", "css:finder"],
+        ["xpath=//input[@name='tecnica']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[5]", "xpath:idRelative"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e66129f4-28fd-488f-9d6b-b02e55db3d3a",
+      "comment": "",
+      "command": "type",
+      "target": "name=tecnica",
+      "targets": [
+        ["name=tecnica", "name"],
+        ["css=input:nth-child(5)", "css:finder"],
+        ["xpath=//input[@name='tecnica']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[5]", "xpath:idRelative"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": "Olio"
+    }, {
+      "id": "af1d8e80-f54b-40f1-970f-af6664bc99e9",
+      "comment": "",
+      "command": "click",
+      "target": "name=dimensione",
+      "targets": [
+        ["name=dimensione", "name"],
+        ["css=input:nth-child(6)", "css:finder"],
+        ["xpath=//input[@name='dimensione']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[6]", "xpath:idRelative"],
+        ["xpath=//input[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d3963aed-ec0f-4acd-a978-1f10f3291c97",
+      "comment": "",
+      "command": "type",
+      "target": "name=dimensione",
+      "targets": [
+        ["name=dimensione", "name"],
+        ["css=input:nth-child(6)", "css:finder"],
+        ["xpath=//input[@name='dimensione']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[6]", "xpath:idRelative"],
+        ["xpath=//input[6]", "xpath:position"]
+      ],
+      "value": "25*50"
+    }, {
+      "id": "811f00bd-9a9a-4bde-8e85-cdea1cdaf6d5",
+      "comment": "",
+      "command": "click",
+      "target": "name=prezzo",
+      "targets": [
+        ["name=prezzo", "name"],
+        ["css=input:nth-child(7)", "css:finder"],
+        ["xpath=//input[@name='prezzo']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[7]", "xpath:idRelative"],
+        ["xpath=//input[7]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c9d81710-4869-4c27-a7e6-6558ab00759e",
+      "comment": "",
+      "command": "type",
+      "target": "name=prezzo",
+      "targets": [
+        ["name=prezzo", "name"],
+        ["css=input:nth-child(7)", "css:finder"],
+        ["xpath=//input[@name='prezzo']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[7]", "xpath:idRelative"],
+        ["xpath=//input[7]", "xpath:position"]
+      ],
+      "value": "150000"
+    }, {
+      "id": "d7893f07-decf-4625-8557-0696f7696bd0",
+      "comment": "",
+      "command": "click",
+      "target": "id=submitInserisci",
+      "targets": [
+        ["id=submitInserisci", "id"],
+        ["css=#submitInserisci", "css:finder"],
+        ["xpath=//input[@id='submitInserisci']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[9]", "xpath:idRelative"],
+        ["xpath=//input[9]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "258dc635-e309-40be-8d0c-10bbe6278362",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//h1[contains(.,'An Exception has occurred. Please be careful')]",
+      "targets": [
+        ["css=h1:nth-child(5)", "css:finder"],
+        ["xpath=//body/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'An Exception has occurred. Please be careful')]", "xpath:innerText"]
+      ],
+      "value": "An Exception has occurred. Please be careful"
+    }]
+  }, {
+    "id": "9e1744d3-411e-4b7f-b402-ab679be4de9d",
+    "name": "TC_IQ9",
+    "commands": [{
+      "id": "615fe259-4826-4e0e-a3d3-1b01f85ad334",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/ArtGalleryIS_war_exploded/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3c114776-a0fc-4d51-89d2-ca8b5293c2c5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1051x815",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bbd62ecc-c0c1-4578-a3a0-6cf39d0cd050",
+      "comment": "",
+      "command": "click",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e3cb933-ac35-4c35-a732-7024fb054727",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "admin2"
+    }, {
+      "id": "d500948b-0128-4fc8-b2b6-ddd2b67576ab",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "fedele123"
+    }, {
+      "id": "bc3ef7ea-bfe7-4520-8d0f-97c54e420125",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "c9c04687-cfcc-4319-bc37-1165ab741b92",
+      "comment": "",
+      "command": "click",
+      "target": "css=form:nth-child(5) > button",
+      "targets": [
+        ["css=form:nth-child(5) > button", "css:finder"],
+        ["xpath=//div[@id='navbar']/form[3]/button", "xpath:idRelative"],
+        ["xpath=//form[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'admin2')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b4433af6-4108-475a-884b-db2330b31038",
+      "comment": "",
+      "command": "click",
+      "target": "id=submitInserisci",
+      "targets": [
+        ["id=submitInserisci", "id"],
+        ["css=#submitInserisci", "css:finder"],
+        ["xpath=//input[@id='submitInserisci']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[9]", "xpath:idRelative"],
+        ["xpath=//input[9]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b414ac78-6be8-4942-ad2d-1cd2861d2fbd",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//h1[contains(.,'An Exception has occurred. Please be careful')]",
+      "targets": [
+        ["css=h1:nth-child(5)", "css:finder"],
+        ["xpath=//body/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'An Exception has occurred. Please be careful')]", "xpath:innerText"]
+      ],
+      "value": "An Exception has occurred. Please be careful"
+    }]
+  }, {
+    "id": "1b98b83d-e19a-4d4d-8005-480f06799cf5",
+    "name": "TC_IQ10",
+    "commands": [{
+      "id": "4501dc7b-b948-4af9-802c-0819a515bc75",
+      "comment": "",
+      "command": "open",
+      "target": "/ArtGalleryIS_war_exploded/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ca5cf0d5-38f1-4fb6-8cae-c19989fbba9c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x835",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9c50551f-bef0-46c2-9985-4357a9e5e8f5",
+      "comment": "",
+      "command": "click",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7c4489ca-55ba-40e9-a035-9c884df27ec6",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "admin2"
+    }, {
+      "id": "c07f4595-0cab-437c-93a2-3b86033f6413",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "fedele123"
+    }, {
+      "id": "ff65441a-ce79-416f-bc3d-934650dd85dc",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar']/form[3]/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "bcd76fd7-827b-4e5d-ba4b-6a65b2ccfdff",
+      "comment": "",
+      "command": "click",
+      "target": "css=form:nth-child(5) > button",
+      "targets": [
+        ["css=form:nth-child(5) > button", "css:finder"],
+        ["xpath=//div[@id='navbar']/form[3]/button", "xpath:idRelative"],
+        ["xpath=//form[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'admin2')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0b274063-3799-413c-b36f-49adb92a48b1",
+      "comment": "",
+      "command": "click",
+      "target": "name=titolo",
+      "targets": [
+        ["name=titolo", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='titolo']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input", "xpath:idRelative"],
+        ["xpath=//div[3]/form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "56b15658-d11e-49f6-84da-ae2ff34a50e2",
+      "comment": "",
+      "command": "type",
+      "target": "name=titolo",
+      "targets": [
+        ["name=titolo", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='titolo']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input", "xpath:idRelative"],
+        ["xpath=//div[3]/form/input", "xpath:position"]
+      ],
+      "value": "La Gioconda!11"
+    }, {
+      "id": "3ae4e44e-abbb-4887-ab07-d32ca4f86566",
+      "comment": "",
+      "command": "click",
+      "target": "name=artista",
+      "targets": [
+        ["name=artista", "name"],
+        ["css=form:nth-child(1) > input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='artista']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5acceaea-2268-48ce-9f7b-afeda682948f",
+      "comment": "",
+      "command": "type",
+      "target": "name=artista",
+      "targets": [
+        ["name=artista", "name"],
+        ["css=form:nth-child(1) > input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='artista']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "Leona!1"
+    }, {
+      "id": "8c5ca468-5734-47b0-90c4-db6b98c5b5ae",
+      "comment": "",
+      "command": "click",
+      "target": "name=anno",
+      "targets": [
+        ["name=anno", "name"],
+        ["css=input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='anno']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b9f18314-1c1b-474c-9b15-471091324af7",
+      "comment": "",
+      "command": "type",
+      "target": "name=anno",
+      "targets": [
+        ["name=anno", "name"],
+        ["css=input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='anno']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "aa13"
+    }, {
+      "id": "c1023eaf-7c73-410f-8187-9e9391f1afea",
+      "comment": "",
+      "command": "click",
+      "target": "name=genere",
+      "targets": [
+        ["name=genere", "name"],
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='genere']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[4]", "xpath:idRelative"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b7f9963a-44c8-4549-964e-d05028a06413",
+      "comment": "",
+      "command": "type",
+      "target": "name=genere",
+      "targets": [
+        ["name=genere", "name"],
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='genere']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[4]", "xpath:idRelative"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": "Ritratto1233"
+    }, {
+      "id": "43028010-4a6c-4b7d-8366-155ca8da0a51",
+      "comment": "",
+      "command": "click",
+      "target": "name=tecnica",
+      "targets": [
+        ["name=tecnica", "name"],
+        ["css=input:nth-child(5)", "css:finder"],
+        ["xpath=//input[@name='tecnica']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[5]", "xpath:idRelative"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "902bd19f-cffe-4300-b95f-79203677737d",
+      "comment": "",
+      "command": "type",
+      "target": "name=tecnica",
+      "targets": [
+        ["name=tecnica", "name"],
+        ["css=input:nth-child(5)", "css:finder"],
+        ["xpath=//input[@name='tecnica']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[5]", "xpath:idRelative"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": "Olio su tela11"
+    }, {
+      "id": "057480b2-db4a-4d3a-ae9a-e9d664a077a2",
+      "comment": "",
+      "command": "click",
+      "target": "name=dimensione",
+      "targets": [
+        ["name=dimensione", "name"],
+        ["css=input:nth-child(6)", "css:finder"],
+        ["xpath=//input[@name='dimensione']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[6]", "xpath:idRelative"],
+        ["xpath=//input[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d11ac52f-4be3-4f58-9355-9228977ab4cb",
+      "comment": "",
+      "command": "type",
+      "target": "name=dimensione",
+      "targets": [
+        ["name=dimensione", "name"],
+        ["css=input:nth-child(6)", "css:finder"],
+        ["xpath=//input[@name='dimensione']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[6]", "xpath:idRelative"],
+        ["xpath=//input[6]", "xpath:position"]
+      ],
+      "value": "25*5x"
+    }, {
+      "id": "a43f50a5-266b-49fb-860c-e1e874c599c4",
+      "comment": "",
+      "command": "click",
+      "target": "name=prezzo",
+      "targets": [
+        ["name=prezzo", "name"],
+        ["css=input:nth-child(7)", "css:finder"],
+        ["xpath=//input[@name='prezzo']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[7]", "xpath:idRelative"],
+        ["xpath=//input[7]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2a51aced-d94d-43b3-a2f9-bb564322c2a3",
+      "comment": "",
+      "command": "type",
+      "target": "name=prezzo",
+      "targets": [
+        ["name=prezzo", "name"],
+        ["css=input:nth-child(7)", "css:finder"],
+        ["xpath=//input[@name='prezzo']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[7]", "xpath:idRelative"],
+        ["xpath=//input[7]", "xpath:position"]
+      ],
+      "value": "?12"
+    }, {
+      "id": "1b747641-ea74-4b69-a9c6-b1ff341438d3",
+      "comment": "",
+      "command": "click",
+      "target": "id=submitInserisci",
+      "targets": [
+        ["id=submitInserisci", "id"],
+        ["css=#submitInserisci", "css:finder"],
+        ["xpath=//input[@id='submitInserisci']", "xpath:attributes"],
+        ["xpath=//div[@id='InserimentoQuadro']/form/input[9]", "xpath:idRelative"],
+        ["xpath=//input[9]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4a524ab5-d44e-478e-a60f-4eb480430c56",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//h1[contains(.,'An Exception has occurred. Please be careful')]",
+      "targets": [
+        ["css=h1:nth-child(5)", "css:finder"],
+        ["xpath=//body/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'An Exception has occurred. Please be careful')]", "xpath:innerText"]
+      ],
+      "value": "An Exception has occurred. Please be careful"
+    }]
+  }],
+  "suites": [{
+    "id": "7b23d17f-3846-454a-bbf7-2361c0d9c5ac",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["3e45296b-57cd-43dd-81a9-588f5c94384c"]
+  }],
+  "urls": ["http://localhost:8080/", "http://localhost:8080/ArtGalleryIS_war_exploded/"],
+  "plugins": []
+}
