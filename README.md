@@ -14,11 +14,3 @@ Il sistema che si propone di progettare è di tipo web-based e I dati di interes
 
 Funzionalità previste: ci sono due figure quella dell’aministratore e quella dell’utente-acquirente. L’amministratore avrà funzioni relative alla gestione dei quadri (inserimento, rimozione, modifica) degli utenti (modifica, rimozione). L’utente, potrà effettuare acquisti tramite un carrello, visualizzare gli acquisti precedenti e registrarsi sulla piattaforma
 
-# Deadlines
-1. 5 ottobre - formazione team, creazione repository, invio schede informative, proposta di progetto, file excel cone le informazioni su progetto e partecipanti, di progetto, e invito docete e tutor su github.
-2. Problem Statement: 16 Ottobre.
-3. Requisiti e casi d'uso: 30 Ottobre.
-4. Requirements Analysis Document: 13 Novembre.
-5. System Design Document: 27 novembre.
-6. Specifica delle interfacce dei moduli del sottosistema da implementare: 18 Dicembre.
-7. casi di test: 18 Dicembre.
