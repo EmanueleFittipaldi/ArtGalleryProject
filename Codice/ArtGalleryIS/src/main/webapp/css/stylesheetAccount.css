@@ -1,0 +1,33 @@
+@import "navbar.css";
+@import "footer.css";
+
+div#userPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+div#info {
+
+}
+
+div.infoQuadro{
+    
+}
+
+div#ordini {
+    display: flex;
+    flex-direction: column;
+
+}
+
+div.item {
+    padding: 5px;
+}
+
+div.item img {
+    width: 25%;
+
+
+}

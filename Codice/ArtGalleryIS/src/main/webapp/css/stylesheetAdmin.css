@@ -1,0 +1,83 @@
+@import "navbar.css";
+@import "footer.css";
+
+div#Contenuti{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div#InserimentoQuadro form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h3{
+    text-align:center;
+    font-family: "Verdana";
+}
+div#ListaOpere{
+    overflow-x: auto; /*Se una tabella viene ristretta,allora appare un barra di scorrimento per vedere il contenuto della tabella*/
+}
+
+div#ListaUtenti{
+    overflow-x: auto; /*Se una tabella viene ristretta,allora appare un barra di scorrimento per vedere il contenuto della tabella*/
+}
+
+/* CSS per le tabelle */
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+input[type="text"]{
+    display: block;
+    margin-left:40%;
+    width: 20%;
+    margin-top:5px;
+    margin-bottom:5px;
+    border-radius: 20px;
+    padding:5px;
+    border: none;
+    transition: width 0.5s;
+}
+input[type="text"]:focus{
+    width:25%;
+    outline:none;
+}
+
+th,td{
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+input[type="submit"]#submitInserisci{
+    width:50%;
+    margin-left:25%;
+    margin-top:10px;
+    padding:10px;
+}
+tr:hover {
+    background-color: lightgray;
+}
+input[type="file"]{
+    margin-left:40%;
+}
+input[type="file"]:focus{
+    margin-left:40%;
+    outline:none;
+}
+
+input[type="submit"]{
+    border-radius: 20px;
+    color:white;
+    background-color: orangered;
+    transition: background-color 0.5s ;
+    border:none;
+}
+input[type="submit"]:hover{
+    outline:none;
+    background-color: orange;
+
+}
+

@@ -1,0 +1,140 @@
+@import "navbar.css";
+@import "footer.css";
+
+#cartContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.informazioni {
+    padding: 0 0 0 20px;
+}
+
+div.removebuttonDiv [type="button"] {
+    margin: 100% 0%;
+    border: none;
+    color: white;
+    padding: 10px;
+    background-color: orangered;
+    text-align: center;
+    transition: background-color 0.5s;
+    border-radius: 10px;
+}
+
+
+div.removebuttonDiv [type="button"]:hover {
+    background-color: orange;
+}
+
+div.removebuttonDiv [type="button"]:focus{
+    outline:none;
+}
+
+
+.cartItem {
+    padding: 5px 0px;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: solid 1px lightgray;
+}
+
+img {
+    width: 15%;
+    padding: 30px;
+}
+
+#cartSidebar {
+    width: 30%;
+    padding: 20px;
+    margin-left: 3%;
+    margin-top: 1%;
+    border-radius: 50px;
+    background-color: white;
+}
+
+#cartItems {
+    width: 50%;
+    padding: 20px 100px 20px 20px;
+    background-color: white;
+    border-radius: 50px;
+    margin-top: 1%;
+    margin-left: 2%;
+}
+
+
+#checkoutButton {
+    background-color: lightgreen;
+    color: white;
+    width: 70%;
+    border: none;
+    padding: 20px;
+    margin-left: 18%;
+    margin-top: 40px;
+    transition: background-color 0.5s;
+    border-radius: 10px;
+}
+
+#checkoutButton:hover {
+    background-color: #D0F0C0;
+}
+
+img#PaymentMethods {
+    width: 70%;
+    padding: 5% 0%;
+    margin-left: 15%;
+}
+
+p#totaleCarrello {
+    font-size: 150%;
+    text-align: center;
+}
+
+p#noElements {
+    font-size: 150%;
+    text-align: center;
+}
+
+blockquote {
+    background: #f9f9f9;
+    border-left: 10px solid #ccc;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+button:focus {
+    outline: none;
+}
+
+p#reviews {
+    color: lightgray;
+    text-align: center;
+}
+
+blockquote:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
+
+blockquote p {
+    display: inline;
+}
+
+@media only screen and (max-width: 944px) {
+    #cartContainer {
+        flex-direction: column;
+    }
+    img{
+        height:15%;
+    }
+    #cartItems {
+        width: auto;
+    }
+    #cartSidebar {
+        width: auto;
+    }
+}

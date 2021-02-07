@@ -1,0 +1,49 @@
+@import "navbar.css";
+@import "footer.css";
+
+input[type="text"]{
+    display: block;
+    margin-left:40%;
+    width: 20%;
+    margin-top:5px;
+    margin-bottom:5px;
+    border-radius: 20px;
+    padding:5px;
+    border: none;
+    transition: width 0.5s;
+}
+input[type="submit"]{
+    display: block;
+    margin-left:40%;
+    width: 20%;
+    margin-top:80px;
+    margin-bottom:5px;
+    border-radius: 20px;
+    padding:5px;
+    border: none;
+    background-color: orangered;
+    color: white;
+    transition: background-color 0.5s;
+}
+input[type="submit"]:hover{
+
+
+    background-color: orange;
+
+}
+input:focus{
+    width:25%;
+    border: none;
+    outline:none;
+}
+
+.slct
+{
+    position:absolute;
+    margin-left:40%;
+    margin-top:5px;
+    margin-bottom:5px;
+    padding:5px;
+
+}
+

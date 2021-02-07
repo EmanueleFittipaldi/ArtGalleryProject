@@ -1,0 +1,73 @@
+body {
+    background-color: #f6f6f6;
+}
+
+button:focus {
+    outline: none;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    overflow: hidden;
+    background-color: #f6f6f6;
+}
+
+form {
+    margin: 0px;
+}
+
+#title {
+    margin: 0px 20px 0px 0px;
+    font-family: Verdana;
+    font-size: 100%;
+}
+
+select {
+    border-radius: 10px;
+}
+
+button {
+    background-color: #f6f6f6;
+    border: none;
+    padding: 15px 20px;
+    font-size: 17px;
+    font-family: Verdana;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+img#logo {
+    width: 2%;
+}
+
+/*
+
+
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+    .masonry {
+        column-count: 2;
+    }
+
+    #navbar {
+        flex-direction: column;
+    }
+}
+
+
+@media only screen and (max-width: 769px) and (min-width: 340px) {
+    .masonry {
+        column-count: 1;
+    }
+
+    #navbar {
+        flex-direction: column;
+    }
+}
+*/

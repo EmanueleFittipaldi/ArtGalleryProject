@@ -1,0 +1,62 @@
+/*@import "navbar.css";
+@import "footer.css";
+
+div#container{
+    display: flex;
+    flex-direction: row;
+    margin-left:24%;
+    margin-top:20px;
+}
+
+div#Giuseppe,div#Emanuele,div#Antonio{
+    margin:10px;
+}*/
+
+@import "navbar.css";
+@import "footer.css";
+
+div#container{
+    display: flex;
+    flex-direction: row;
+    margin-left:24%;
+    margin-top:20px;
+
+}
+
+div#Giuseppe,div#Emanuele,div#Fedele
+{
+    margin:10px;
+}
+
+a.mess
+{
+    display: block;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+    margin: 10px;
+    width: 100%;
+    text-align: center;
+    background-color: orangered;
+    color: white;
+    font-family: verdena;
+    font-size: 110%;
+    transition: background-color 0.5s;
+    text-decoration: none;
+}
+
+div#Giuseppe,div#Emanuele,div#Fedele
+{
+    margin:10px;
+    width: 100%;
+    text-align: center;
+}
+
+div#container{
+    display: flex;
+    flex-direction: row;
+    margin-left:10%;
+    margin-top:20px;
+    margin-right:10%;
+
+}

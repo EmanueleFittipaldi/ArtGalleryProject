@@ -1,0 +1,120 @@
+@import "navbar.css";
+@import "footer.css";
+
+.loginContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 42%;
+    margin-bottom: 10%;
+}
+
+.registrationContainer {
+    margin-left: 42%;
+    margin-bottom: 5%;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    display: block;
+    padding: 5px;
+    margin: 10px;
+    width: 30%;
+    transition: width 0.5s;
+    border-radius: 10px;
+    border: none;
+}
+
+input[type="submit"] {
+    display: block;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+    margin: 10px;
+    width: 30%;
+    background-color: orangered;
+    color: white;
+    font-family: verdena;
+    font-size: 110%;
+    transition: background-color 0.5s;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+    outline: none;
+    width:35%;
+    border-radius: 10px;
+    border:none;
+}
+input[type="submit"]:focus {
+    outline: none;
+    border-radius: 10px;
+    border:none;
+}
+
+input[type="submit"]:hover {
+    background-color: orange;
+}
+
+h2{
+    margin-left: 3%;
+}
+
+/*
+    Media Querys blocks
+ */
+@media screen  and (max-width: 618px){
+
+    .loginContainer  input[type="text"],input[type="password"],input[type="submit"]{
+        width: 75%;
+    }
+
+    .loginContainer{
+        margin-left: 25%;
+    }
+
+    input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus{
+        width: 80%;
+    }
+
+    .registrationContainer  input[type="text"],input[type="password"],input[type="email"],
+    input[type="submit"]{
+        width: 75%;
+    }
+
+    .registrationContainer{
+        margin-left: 25%;
+    }
+
+    input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus{
+        width: 80%;
+    }
+
+}
+
+@media screen  and (min-width: 620px) and (max-width: 834px){
+    .loginContainer  input[type="text"],input[type="password"],input[type="submit"]{
+        width: 50%;
+
+    }
+
+    .loginContainer{
+        margin-left: 35%;
+    }
+
+    input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus{
+        width: 55%;
+    }
+
+    .registrationContainer  input[type="text"],input[type="password"],input[type="email"],
+    input[type="submit"]{
+        width: 50%;
+    }
+
+    .registrationContainer{
+        margin-left: 35%;
+    }
+
+    input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus{
+        width: 55%;
+    }
+}
+
+

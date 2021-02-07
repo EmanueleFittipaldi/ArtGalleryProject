@@ -1,0 +1,40 @@
+@import "navbar.css";
+@import "footer.css";
+
+input[type="submit"]#compra {
+    background-color: orangered;
+    border: none;
+    color: white;
+    font-family: verdena;
+    font-size: 110%;
+    transition: background-color 0.5s;
+}
+
+input[type="text"], input[type="email"], input[type="submit"], input[type="password"] {
+    display: block;
+    padding: 5px;
+    margin: 10px;
+    width: 30%;
+    transition: width 0.5s;
+    border-radius: 10px;
+    border: none;
+}
+
+input[type="text"]:focus {
+    width: 35%;
+    border-radius: 10px;
+    border: none;
+}
+
+input[type="text"]:focus, input[type="submit"]:focus {
+    outline: none;
+}
+
+div#moduloCheckout {
+    margin-left: 42%;
+    margin-top: 10%;
+}
+
+input[type="submit"]#compra:hover {
+    background-color: orange;
+}

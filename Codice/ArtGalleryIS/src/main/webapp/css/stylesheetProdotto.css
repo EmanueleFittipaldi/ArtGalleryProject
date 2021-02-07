@@ -1,0 +1,57 @@
+@import "navbar.css";
+@import "footer.css";
+
+h1 {
+    text-align: center;
+    margin: 5px 0px 5px 0px;
+}
+
+h3.subtitle {
+    color: darkgray;
+    text-align: center;
+    margin: 5px 0px 5px 0px;
+}
+
+p#descrizione {
+    background-color: white;
+    border-radius: 50px;
+    color: darkgray;
+    font-family: Verdana;
+    padding: 2%;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+
+.acquista {
+    border: none;
+    background-color: orangered;
+    text-align: center;
+    border-radius: 20px;
+    color: white;
+    display: block;
+    height: 60px;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    transition: background-color 0.5s, width 0.5s;
+}
+
+input[type="submit"]:focus {
+    outline: none;
+}
+
+.acquista:hover {
+    background-color: orange;
+    width: 40%;
+}
+
+img#immagineProdotto {
+    width: auto;
+    height: 85%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 10px 10px 15px gray;
+}

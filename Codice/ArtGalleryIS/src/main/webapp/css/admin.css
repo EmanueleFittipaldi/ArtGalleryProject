@@ -1,0 +1,9 @@
+#button_container{
+    display: flex;
+    flex-flow: column;
+}
+
+#button_container  button{
+    position: center;
+    margin: auto;
+}

@@ -1,0 +1,93 @@
+@import "navbar.css";
+@import "footer.css";
+
+.sub {
+    margin: 0 auto;
+}
+
+.masonry { /*Masonry container*/
+    margin: 1em;
+    column-count: 4;
+    column-gap: 0.5em;
+    clear: both;
+}
+
+.item { /*masonry bricks or child elements*/
+    display: inline-block;
+    margin: 0.3em;
+}
+.sub:focus{
+    outline:none;
+}
+
+.sub {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    width: 10%;
+    height: 75px;
+    opacity: 0;
+    font-family: verdena;
+    font-style: italic;
+    transition: opacity 0.4s, width 0.4s;
+    background-color: white;
+    border: none;
+    color: black;
+    border-radius: 100px;
+}
+
+.sub:hover {
+    opacity: 75%;
+    width: 65%;
+}
+
+.item {
+    filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, .3));
+    transition: filter .25s ease-in-out;
+}
+
+.item:hover {
+    filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, .3));
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 500px) {
+    .masonry {
+        column-count: 1;
+    }
+    #navbar {
+        flex-direction: column;
+    }
+}
+@media only screen and (min-width: 501px) {
+    .masonry {
+        column-count: 2;
+    }
+    #navbar {
+        flex-direction: column;
+    }
+}
+@media only screen and (min-width: 750px) {
+    .masonry {
+        column-count: 3;
+    }
+    #navbar {
+        flex-direction: row;
+    }
+}
+@media only screen and (min-width: 870px) {
+    .masonry {
+        column-count: 4;
+    }
+    #navbar {
+        flex-direction: row;
+    }
+}
+
+
